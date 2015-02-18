@@ -13,14 +13,24 @@ $dark : #383838;
 	height: 80px;
 }
 
+
 @media only screen and (max-width: 40em) {
 	#reslogotext{
-	height: 30px;
-	}
-
+	height: 50px;
+	margin-top: 15px;
+	}	
  } 			 
 
+ @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+ 	#reslogotext {
+ 	height: 74px;
+ 	}
+ }
 
+.title-area {
+	padding-top: 0px;
+	padding-left: 2px;
+}
 
 
 .bCK {
@@ -32,10 +42,6 @@ nav {
 }
 
 
-.title-area {
-	padding-top: 0px;
-	padding-left: 2px;
-}
 
 .fright {
 	float: right;
