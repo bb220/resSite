@@ -9,16 +9,23 @@ $indigo :  #07A0D6;
 $money : #9cc605;
 $dark : #383838;
 
+@media only screen and (max-width: 40em) {
+	#reslogotext{
+	height: 30px;
+	}
+
+ } 			 
+
+
+
+
 .bCK {
 	background-color: #f4f4f4;
 }
 
-/* .tabs {
-	width:100px;
-	text-align: center;
-	color: black;
-	top: 50%;
-} */
+nav {
+	box-shadow: 0 8px 10px -10px black;
+}
 
 
 .title-area {
@@ -30,16 +37,7 @@ $dark : #383838;
 	float: right;
 }
 
-/* nav {
-	box-shadow: 0 8px 10px -10px black;
-	height: 80px;
-	width: 100%;
-	background-color: white;
-}
 
-li {
-	display: inline-block;
-} */
  
 
 #slogan {
@@ -114,10 +112,10 @@ footer a {
 #blue h4 {
 	color: white;
 }
-#red h1 {
+#red h2 {
 	color: white;
 }
-#red h5 {
+#red h6 {
 	color: white
 }
 #green h1 {
@@ -1523,8 +1521,11 @@ $include-html-global-classes: $include-html-classes;
 // $topbar-bg-color: $oil;
 // $topbar-bg: $topbar-bg-color;
 
+
 // Height and margin
-$topbar-height: rem-calc(80);
+
+
+$topbar-height: rem-calc(80); 
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
