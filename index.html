@@ -12,7 +12,7 @@
   <body>
 
 
- <div class="row">
+ <div id="topPage"class="row">
      <div class="large-12 columns">
       <div class="row topSpace"></div>
       <div class="row">
@@ -43,7 +43,7 @@
     <nav class="top-bar" id="TOP" data-topbar  data-options="scrolltop:false" role="navigation">
       <ul class="title-area">
         <li class="name">
-          <img id="reslogotext" src="img/reslogottextnew.png"/>
+          <a href="#"><img id="reslogotext" src="img/reslogottextnew.png"/></a>
         </li>
 
      
@@ -51,15 +51,17 @@
       </ul>
     <section class="top-bar-section">
       <ul class="right">
-        <li class="active"><a href="#">About</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Get Involved</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Contact</a></li>
+        <li id="aboutBtn"class="active"><a href="#">About</a></li>
+        <li id="eventsBtn"><a href="#">Events</a></li>
+        <li id="getinvolvedBtn"><a href="#">Get Involved</a></li>
+        <li id="teamBtn"><a href="#">Team</a></li>
+        <li id="contactBtn"><a href="#">Contact</a></li>
       </ul>     
     </section
   </nav>
 </div>
+
+
 
 
 
@@ -95,7 +97,7 @@
         <div class="row bottomSpace"></div>
        </div>
     
-       <div class="row topSpace"></div>
+       <div id="events" class="row topSpace"></div>
        <div class="row">
         <div class="large-12 columns">
          <h2>Our Events</h2>
@@ -201,7 +203,7 @@
         
          <div class="row bottomSpace"></div>
        </div>
-       <div class="row topSpace"></div>
+       <div id="team" class="row topSpace"></div>
        <div class="row"><div class="small-12 columns"><h1>Meet the team (names + title)</h1></div>
        </div>
        <div class="row"><p></p></div>
@@ -293,7 +295,46 @@
         var $slogan = $('#slogan');
 
         $slogan.fadeTo(2200, 1);
-      
+        
+        var $aboutBtn = $('#aboutBtn');
+        var $eventsBtn = $('#eventsBtn');
+        var $getinvolvedBtn = $('#getinvolvedBtn');
+        var $teamBtn = $('#teamBtn');
+        var $contactBtn = $('#contactBtn');
+        var $reslogotext = $('#reslogotext');
+        var $htmlbody = $('html, body');
+
+        $aboutBtn.click(function(){
+             $htmlbody.animate({
+                  scrollTop: $("#red").offset().top
+              }, 500);
+        });
+        $eventsBtn.click(function(){
+            $htmlbody.animate({
+                  scrollTop: $("#events").offset().top
+              }, 500);
+        });
+        $getinvolvedBtn.click(function(){
+            $htmlbody.animate({
+                  scrollTop: $("#blue").offset().top
+              }, 500);
+        });
+        $teamBtn.click(function(){
+            $htmlbody.animate({
+                  scrollTop: $("#team").offset().top
+              }, 500);
+        });
+        $contactBtn.click(function(){
+            $htmlbody.animate({
+                  scrollTop: $("#green").offset().top
+              }, 500);
+        });
+        $reslogotext.click(function(){
+            $htmlbody.animate({
+                  scrollTop: $("#topPage").offset().top
+              }, 500);
+        });
+
 
       });
     </script>
