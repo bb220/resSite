@@ -8,6 +8,7 @@ $scarlet : #E21936;
 $indigo :  #07A0D6;
 $money : #9cc605;
 $dark : #383838;
+$white : #ffffff;
 
 #reslogotext{
 	height: 80px;
@@ -149,13 +150,6 @@ footer a {
 
 
 
-
-
-
-
-
-
-
 // Table of Contents
 // Foundation Settings
 //
@@ -265,7 +259,7 @@ $include-html-global-classes: $include-html-classes;
 // $steel       : #666666;
 // $charcoal    : #555555;
 // $tuatara     : #444444;
- $oil         : #ffffff;
+//  $oil         : #ffffff;
 // $jet         : #222222;
 // $black       : #000000;
 
@@ -1534,7 +1528,7 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: $oil;
+ $topbar-bg-color: $white;
 // $topbar-bg: $topbar-bg-color;
 
 
