@@ -16,9 +16,10 @@ $white : #ffffff;
 	height: 80px;
 }
 
-/* #topPage {
-	height: 88%;
-} causes weird nav bar snapping */
+#topPage {
+	
+	overflow: hidden;
+}
 
 .icons {
 	height: 6em;

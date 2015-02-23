@@ -292,10 +292,9 @@
     <script src="js/app.js"></script>
     <script>
     $(function(){
+      //DOM cache
         var $slogan = $('#slogan');
-
-        $slogan.fadeTo(2200, 1);
-        
+        var viewportHeight = $(window).height();
         var $aboutBtn = $('#aboutBtn');
         var $eventsBtn = $('#eventsBtn');
         var $getinvolvedBtn = $('#getinvolvedBtn');
@@ -303,7 +302,15 @@
         var $contactBtn = $('#contactBtn');
         var $reslogotext = $('#reslogotext');
         var $htmlbody = $('html, body');
+        var $topPage = $('#topPage');
 
+      //landing height set 80px is height of navbar
+        $topPage.css("height", viewportHeight - 80);
+
+      //slogan fade
+        $slogan.fadeTo(2200, 1);
+        
+      //tabs on click scroll to section
         $aboutBtn.click(function(){
              $htmlbody.animate({
                   scrollTop: $("#red").offset().top - 80
@@ -331,7 +338,7 @@
         });
         $reslogotext.click(function(){
             $htmlbody.animate({
-                  scrollTop: $("#topPage").offset().top - 80
+                  scrollTop: $topPage.offset().top - 80
               }, 500);
         });
 
