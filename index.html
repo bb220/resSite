@@ -51,11 +51,11 @@
       </ul>
     <section class="top-bar-section">
       <ul class="right">
-        <li id="aboutBtn"class="active"><a href="#">About</a></li>
-        <li id="eventsBtn"><a href="#">Events</a></li>
-        <li id="getinvolvedBtn"><a href="#">Get Involved</a></li>
-        <li id="teamBtn"><a href="#">Team</a></li>
-        <li id="contactBtn"><a href="#">Contact</a></li>
+        <li id="aboutBtn"class="active btn"><a href="#">About</a></li>
+        <li id="eventsBtn" class="btn"><a href="#">Events</a></li>
+        <li id="getinvolvedBtn" class="btn"><a href="#">Get Involved</a></li>
+        <li id="teamBtn" class="btn"><a href="#">Team</a></li>
+        <li id="contactBtn" class="btn"><a href="#">Contact</a></li>
       </ul>     
     </section
   </nav>
@@ -290,60 +290,7 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
-    <script>
-    $(function(){
-      //DOM cache
-        var $slogan = $('#slogan');
-        var viewportHeight = $(window).height();
-        var $aboutBtn = $('#aboutBtn');
-        var $eventsBtn = $('#eventsBtn');
-        var $getinvolvedBtn = $('#getinvolvedBtn');
-        var $teamBtn = $('#teamBtn');
-        var $contactBtn = $('#contactBtn');
-        var $reslogotext = $('#reslogotext');
-        var $htmlbody = $('html, body');
-        var $topPage = $('#topPage');
-
-      //landing height set 80px is height of navbar
-        $topPage.css("height", viewportHeight - 80);
-
-      //slogan fade
-        $slogan.fadeTo(2200, 1);
-        
-      //tabs on click scroll to section
-        $aboutBtn.click(function(){
-             $htmlbody.animate({
-                  scrollTop: $("#red").offset().top - 80
-              }, 500);
-        });
-        $eventsBtn.click(function(){
-            $htmlbody.animate({
-                  scrollTop: $("#events").offset().top - 80
-              }, 500);
-        });
-        $getinvolvedBtn.click(function(){
-            $htmlbody.animate({
-                  scrollTop: $("#blue").offset().top - 80
-              }, 500);
-        });
-        $teamBtn.click(function(){
-            $htmlbody.animate({
-                  scrollTop: $("#team").offset().top - 80
-              }, 500);
-        });
-        $contactBtn.click(function(){
-            $htmlbody.animate({
-                  scrollTop: $("#green").offset().top - 80
-              }, 500);
-        });
-        $reslogotext.click(function(){
-            $htmlbody.animate({
-                  scrollTop: $topPage.offset().top - 80
-              }, 500);
-        });
-
-
-      });
-    </script>
+    <script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
