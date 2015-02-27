@@ -12,7 +12,7 @@
         var $htmlbody = $('html, body');
         var $topPage = $('#topPage');
 
-      //landing height set 80px is height of navbar
+      //Sets the height of the landing page to fit the screen, 80px is the height of the navbar
         $topPage.css("height", viewportHeight - 80);
 
       //Adjusting "active" class to update with user scroll via waypoints plugin
@@ -60,7 +60,7 @@
       //slogan fade
         $slogan.delay(900).fadeTo(200, 1);
         
-      //tabs on click scroll to section
+      //On click, navbar links scroll to corresponding section
         $aboutBtn.click(function(){
              $htmlbody.animate({
                   scrollTop: $("#red").offset().top - 80
