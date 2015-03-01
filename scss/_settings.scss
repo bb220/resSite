@@ -23,6 +23,13 @@ $white : #ffffff;
 .icons {
 	height: 6em;
 }
+.btn {
+ 	height: 80px;
+ 	width: 10vw;
+ 	text-align: center;
+ 	line-height:75px;
+ 	cursor: pointer;
+ }
 
 @media only screen and (max-width: 40em) {
 	#reslogotext{
@@ -32,6 +39,9 @@ $white : #ffffff;
 	.icons {
 	height: 3em;
 	}
+	.btn {
+		width: 100vw;
+	}
 	
  } 			 
 
@@ -39,18 +49,25 @@ $white : #ffffff;
  	#reslogotext {
  	height: 74px;
  	}
+ 	.btn {
+ 		width: 12vw;
+ 	}
  	
  }
 
  //Navbar tab colors and active states
+ 
  #aboutBtn.active div {
  	background-color: $scarlet;
+ 	color: $white;
  }
  #aboutBtn:hover div{
  	background-color: $scarlet;
+ 	color: $white;
  }
  #eventsBtn.active div {
  	background-color: $dark;
+ 	color: $white;
  }
  #eventsBtn:hover div {
  	background-color: $dark;
@@ -58,9 +75,11 @@ $white : #ffffff;
  }
  #getinvolvedBtn.active div {
  	background-color: $indigo;
+ 	color: $white;
  }
  #getinvolvedBtn:hover div {
 	background-color: $indigo;
+	color: $white;
  }
  #teamBtn.active div {
  	background-color: $dark;
@@ -68,12 +87,15 @@ $white : #ffffff;
  }
  #teamBtn:hover div {
  	background-color: $dark;
+ 	color: $white;
  }
  #contactBtn.active div {
- 	background-color:  $money;	
+ 	background-color:  $money;
+ 	color: $white;	
  }
  #contactBtn:hover div {
  	background-color: $money;
+ 	color: $white;
  }
 
 .title-area {
