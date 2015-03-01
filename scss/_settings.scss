@@ -11,6 +11,15 @@ $dark : #383838;
 $white : #ffffff;
 
 
+//remove tap highlight on mobile safari and chrome
+input,
+textarea,
+button,
+select,
+.btn,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 
 #reslogotext{
 	height: 80px;
