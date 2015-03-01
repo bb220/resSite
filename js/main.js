@@ -14,6 +14,7 @@
         var $right = $('.right');
         var $red = $('#red');
         var $bottomRed = $('#bottomRed');
+        var $menuToggle = $('#menuToggle');
 
       //Sets the height of the landing page to fit the screen, 80px is the height of the navbar
         $topPage.css("height", viewportHeight - 80);
@@ -129,26 +130,33 @@
         
       //On click, navbar links scroll to corresponding section
         $aboutBtn.click(function(){
+          //on small screen, closes menu
+          $menuToggle.trigger('click');
+          //scrolls to section
              $htmlbody.animate({
                   scrollTop: $("#red").offset().top - 79
               }, 500);
         });
         $eventsBtn.click(function(){
+          $menuToggle.trigger('click');
             $htmlbody.animate({
                   scrollTop: $("#events").offset().top - 79
               }, 500);
         });
         $getinvolvedBtn.click(function(){
+          $menuToggle.trigger('click');
             $htmlbody.animate({
                   scrollTop: $("#blue").offset().top - 79
               }, 500);
         });
         $teamBtn.click(function(){
+          $menuToggle.trigger('click');
             $htmlbody.animate({
                   scrollTop: $("#team").offset().top - 79
               }, 500);
         });
         $contactBtn.click(function(){
+          $menuToggle.trigger('click');
             $htmlbody.animate({
                   scrollTop: $("#green").offset().top - 79
               }, 500);
