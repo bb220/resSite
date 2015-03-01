@@ -43,36 +43,36 @@ $white : #ffffff;
  }
 
  //Navbar tab colors and active states
- #aboutBtn.active a {
+ #aboutBtn.active div {
  	background-color: $scarlet;
  }
- #aboutBtn:hover a{
+ #aboutBtn:hover div{
  	background-color: $scarlet;
  }
- #eventsBtn.active a {
+ #eventsBtn.active div {
  	background-color: $dark;
  }
- #eventsBtn:hover a {
+ #eventsBtn:hover div {
  	background-color: $dark;
  	color: $white;
  }
- #getinvolvedBtn.active a {
+ #getinvolvedBtn.active div {
  	background-color: $indigo;
  }
- #getinvolvedBtn:hover a {
+ #getinvolvedBtn:hover div {
 	background-color: $indigo;
  }
- #teamBtn.active a {
+ #teamBtn.active div {
  	background-color: $dark;
  	color: $white;
  }
- #teamBtn:hover a {
+ #teamBtn:hover div {
  	background-color: $dark;
  }
- #contactBtn.active a {
+ #contactBtn.active div {
  	background-color:  $money;	
  }
- #contactBtn:hover a {
+ #contactBtn:hover div {
  	background-color: $money;
  }
 
