@@ -17,7 +17,7 @@
         var $menuToggle = $('#menuToggle');
 
       //Sets the height of the landing page to fit the screen, 80px is the height of the navbar
-        $topPage.css("height", viewportHeight - 80);
+        $topPage.css("height", viewportHeight - 70);
 
 
       //Adjusting "active" class to update with user scroll via waypoints plugin
@@ -32,7 +32,7 @@
           $toDeactivate.removeClass('active');
           $aboutBtn.addClass('active');
         },
-        offset: 80
+        offset: 70
       })
       var aboutWaypointBottom = new Waypoint({
         element: $bottomRed,
@@ -42,7 +42,7 @@
           $toDeactivate.removeClass('active');
           $aboutBtn.addClass('active');
         },
-        offset: 80
+        offset: 70
       })
 
       //Events
@@ -54,7 +54,7 @@
           $toDeactivate.removeClass('active');
           $eventsBtn.addClass('active');
         },
-        offset: 80
+        offset: 70
       })
       var eventsWaypoint = new Waypoint({
         element: document.getElementById('eventsBottom'),
@@ -64,7 +64,7 @@
           $toDeactivate.removeClass('active');
           $eventsBtn.addClass('active');
         },
-        offset: 80
+        offset: 70
       })
 
       //Get Involved
@@ -76,7 +76,7 @@
           $toDeactivate.removeClass('active');
           $getinvolvedBtn.addClass('active');
         },
-        offset: 80
+        offset: 70
       })
       var getinvolvedWaypoint = new Waypoint({
         element: document.getElementById('getinvolvedBottom'),
@@ -86,7 +86,7 @@
           $toDeactivate.removeClass('active');
           $getinvolvedBtn.addClass('active');
         },
-        offset: 80
+        offset: 70
       })
 
       //Meet the Team
@@ -98,7 +98,7 @@
           $toDeactivate.removeClass('active');
           $teamBtn.addClass('active');
         },
-        offset: 80
+        offset: 70
       })
       var teamWaypoint = new Waypoint({
         element: document.getElementById('teamBottom'),
@@ -108,7 +108,7 @@
           $toDeactivate.removeClass('active');
           $teamBtn.addClass('active');
         },
-        offset: 80
+        offset: 70
       })
 
       //Contact
@@ -120,7 +120,7 @@
           $toDeactivate.removeClass('active');
           $contactBtn.addClass('active');
         },
-        offset: 80
+        offset: 70
       })
 
      
@@ -134,36 +134,36 @@
           $menuToggle.trigger('click');
           //scrolls to section
              $htmlbody.animate({
-                  scrollTop: $("#red").offset().top - 79
+                  scrollTop: $("#red").offset().top - 69
               }, 500);
         });
         $eventsBtn.click(function(){
           $menuToggle.trigger('click');
             $htmlbody.animate({
-                  scrollTop: $("#events").offset().top - 79
+                  scrollTop: $("#events").offset().top - 69
               }, 500);
         });
         $getinvolvedBtn.click(function(){
           $menuToggle.trigger('click');
             $htmlbody.animate({
-                  scrollTop: $("#blue").offset().top - 79
+                  scrollTop: $("#blue").offset().top - 69
               }, 500);
         });
         $teamBtn.click(function(){
           $menuToggle.trigger('click');
             $htmlbody.animate({
-                  scrollTop: $("#team").offset().top - 79
+                  scrollTop: $("#team").offset().top - 69
               }, 500);
         });
         $contactBtn.click(function(){
           $menuToggle.trigger('click');
             $htmlbody.animate({
-                  scrollTop: $("#green").offset().top - 79
+                  scrollTop: $("#green").offset().top - 69
               }, 500);
         });
         $reslogotext.click(function(){
             $htmlbody.animate({
-                  scrollTop: $topPage.offset().top - 80
+                  scrollTop: $topPage.offset().top - 70
               }, 500);
              
         });

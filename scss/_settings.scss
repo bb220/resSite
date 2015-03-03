@@ -23,7 +23,7 @@ a {
 }
 
 #reslogotext{
-	height: 80px;
+	height: 70px;
 	cursor: pointer;
 }
 
@@ -34,18 +34,29 @@ a {
 .icons {
 	height: 6em;
 }
+
 .btn {
- 	height: 80px;
- 	width: 10vw;
+ 	height: 70px;
  	text-align: center;
- 	line-height:75px;
+ 	line-height: 68px;
  	cursor: pointer;
+ 	width: 100px;
+ }
+
+ #getinvolvedBtn {
+	width: 120px;
+ }
+
+
+ nav {
+ 	opacity: 0.95;
  }
 
 @media only screen and (max-width: 40em) {
 	#reslogotext{
 	height: 50px;
-	margin-top: 15px;
+	margin-top: 10px;
+	margin-left: 4px;
 	}	
 	.icons {
 	height: 3em;
@@ -53,58 +64,62 @@ a {
 	.btn {
 		width: 100vw;
 	}
+	#getinvolvedBtn {
+	width: inherit;
+ 	}
 	
  } 			 
 
  @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
  	#reslogotext {
- 	height: 74px;
+ 	height: 64px;
  	}
  	.btn {
- 		width: 12vw;
+ 		width: 80px;
  	}
+ 	
  	
  }
 
  //Navbar tab colors and active states
  
- #aboutBtn.active div {
+ #aboutBtn.active {
  	background-color: $scarlet;
  	color: $white;
  }
- #aboutBtn:hover div{
+ #aboutBtn:hover {
  	background-color: $scarlet;
  	color: $white;
  }
- #eventsBtn.active div {
+ #eventsBtn.active {
  	background-color: $dark;
  	color: $white;
  }
- #eventsBtn:hover div {
+ #eventsBtn:hover {
  	background-color: $dark;
  	color: $white;
  }
- #getinvolvedBtn.active div {
+ #getinvolvedBtn.active {
  	background-color: $indigo;
  	color: $white;
  }
- #getinvolvedBtn:hover div {
+ #getinvolvedBtn:hover  {
 	background-color: $indigo;
 	color: $white;
  }
- #teamBtn.active div {
+ #teamBtn.active {
  	background-color: $dark;
  	color: $white;
  }
- #teamBtn:hover div {
+ #teamBtn:hover {
  	background-color: $dark;
  	color: $white;
  }
- #contactBtn.active div {
+ #contactBtn.active {
  	background-color:  $money;
  	color: $white;	
  }
- #contactBtn:hover div {
+ #contactBtn:hover {
  	background-color: $money;
  	color: $white;
  }
@@ -1608,7 +1623,7 @@ $include-html-global-classes: $include-html-classes;
 // Height and margin
 
 
-$topbar-height: rem-calc(80); 
+$topbar-height: rem-calc(70); 
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
