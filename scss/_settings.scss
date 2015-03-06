@@ -47,6 +47,14 @@ a {
 	width: 120px;
  }
 
+ #eventsBtn {
+ 	width: 120px;
+ }
+
+ #contactBtn {
+ 	width: 120px;
+ }
+
 
  nav {
  	opacity: 0.95;
@@ -66,6 +74,12 @@ a {
 	}
 	#getinvolvedBtn {
 	width: inherit;
+ 	}
+ 	#eventsBtn {
+ 		width:inherit;
+ 	}
+ 	#contactBtn {
+ 		width: inherit;
  	}
 	
  } 			 
@@ -195,7 +209,7 @@ nav {
 
 footer {
 	text-align: center;
-	font-size: 0.7em;
+	font-size: 0.6em;
 }
 
 footer a {
