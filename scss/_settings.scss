@@ -252,7 +252,78 @@ footer a {
 	color: white;
 }
 
+//Events Desc CSS
 
+.event {
+	cursor: pointer;
+}
+#desciptions .active {
+	display: block;
+}
+
+#descOne {
+	display: none;
+
+}
+#descOne.active {
+	display: block;
+}
+
+#descTwo {
+	display: none;
+
+}
+#descTwo.active {
+	display: block;
+}
+
+#descThree {
+	display: none;
+
+}
+#descThree.active {
+	display: block;
+}
+
+#descFour {
+	display: none;
+
+}
+#descFour.active {
+	display: block;
+}
+
+#descFive {
+	display: none;
+
+}
+#descFive.active {
+	display: block;
+}
+
+#descSix {
+	display: none;
+
+}
+#descSix.active {
+	display: block;
+}
+
+#descSeven {
+	display: none;
+
+}
+#descSeven.active {
+	display: block;
+}
+
+#descEight {
+	display: none;
+
+}
+#descEight.active {
+	display: block;
+}
 
 
 //END CUSTOM CSS
