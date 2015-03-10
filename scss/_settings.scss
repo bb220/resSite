@@ -162,14 +162,18 @@ nav {
 .bottomSpace {
 	height: 120px;
 }
+
+.abovePartner {
+	height: 100px;
+}
 //specific spacings for elements in between
 
 
 #logoBottomSpace {
 	height: 70px;
 }
-#overIconSpace {
-	height: 0;
+.overIconSpace {
+	height: 42px;
 }
 #underIconSpace {
 	height: 50px;
@@ -335,7 +339,9 @@ p {
 	margin-top: 10px;
 	margin-left: 4px;
 	}	
-	
+	#descriptions div img {
+		width: 100%;
+	}
 	.btn {
 		width: 100vw;
 	}
@@ -368,6 +374,12 @@ p {
 	height: 70px;
 }
 
+.abovePartner {
+	height: 70px;
+}
+.overIconSpace {
+	height: 10px;
+}
 
 	
  } 			 
@@ -378,6 +390,13 @@ p {
  	}
  	.btn {
  		width: 80px;
+ 	}
+ 	.splashSpace {
+ 		height: 150px;
+ 	}
+
+ 	#red h2 {
+ 		font-size: 2.2rem;
  	}
  	
  	
