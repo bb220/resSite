@@ -60,40 +60,7 @@ a {
  	opacity: 0.95;
  }
 
-@media only screen and (max-width: 40em) {
-	#reslogotext{
-	height: 50px;
-	margin-top: 10px;
-	margin-left: 4px;
-	}	
-	.icons {
-	height: 3em;
-	}
-	.btn {
-		width: 100vw;
-	}
-	#getinvolvedBtn {
-	width: inherit;
- 	}
- 	#eventsBtn {
- 		width:inherit;
- 	}
- 	#contactBtn {
- 		width: inherit;
- 	}
-	
- } 			 
 
- @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
- 	#reslogotext {
- 	height: 64px;
- 	}
- 	.btn {
- 		width: 80px;
- 	}
- 	
- 	
- }
 
  //Navbar tab colors and active states
  
@@ -340,6 +307,49 @@ p {
 	display: block;
 }
 
+@media only screen and (max-width: 40em) {
+	#reslogotext{
+	height: 50px;
+	margin-top: 10px;
+	margin-left: 4px;
+	}	
+	.icons {
+	height: 2em;
+	}
+	.btn {
+		width: 100vw;
+	}
+	#getinvolvedBtn {
+	width: inherit;
+ 	}
+ 	#eventsBtn {
+ 		width:inherit;
+ 	}
+ 	#contactBtn {
+ 		width: inherit;
+ 	}
+ 	#red h2 {
+ 		font-size: 0.88rem;
+ 	}
+ 	#red strong {
+ 		font-size: 0.7rem;
+ 	}
+ 	#overIconSpace {
+ 		height: 25px;
+ 	}
+	
+ } 			 
+
+ @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+ 	#reslogotext {
+ 	height: 64px;
+ 	}
+ 	.btn {
+ 		width: 80px;
+ 	}
+ 	
+ 	
+ }
 
 //END CUSTOM CSS
 
