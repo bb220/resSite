@@ -41,6 +41,7 @@ a {
  	line-height: 68px;
  	cursor: pointer;
  	width: 100px;
+ 	font-weight: 400;
  }
 
  #getinvolvedBtn {
@@ -60,7 +61,10 @@ a {
  	opacity: 0.95;
  }
 
-
+#learnMore {
+	color: grey;
+	font-size: 0.8rem;
+}
 
  //Navbar tab colors and active states
  
