@@ -219,7 +219,13 @@ footer a {
 
 }
 
+h2 {
+	font-weight: 300;
+}
 
+p {
+	font-weight: 300;
+}
 #green {
 	background-color: $money;
 	color: white;
@@ -235,6 +241,15 @@ footer a {
 }
 #red h2 {
 	color: white;
+	font-weight: 300;
+}
+
+#red strong {
+	font-weight: 400;
+}
+
+#red span {
+	font-weight: 600;
 }
 #red h3 {
 	color: white;
@@ -416,12 +431,12 @@ $include-html-global-classes: $include-html-classes;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-// $font-family-sans-serif:"Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$font-family-sans-serif:"Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
-// $font-weight-normal: normal;
+ $font-weight-normal: 300;
 // $font-weight-bold: bold;
 
 // $white       : #FFFFFF;
