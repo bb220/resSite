@@ -179,6 +179,10 @@ nav {
 	height: 50px;
 }
 
+.smallSpace {
+	height: 20px;
+}
+
 
 
 #blue {
@@ -330,9 +334,15 @@ p {
 }
 
 #eventContainer {
-	padding: 1px;
+	padding: 2px;
+}
+.toDisplay {
+	display: none;
 }
 
+.toHide {
+	display: block;
+}
 @media only screen and (max-width: 40em) {
 	#reslogotext{
 	height: 50px;
@@ -341,6 +351,12 @@ p {
 	}	
 	#descriptions div img {
 		width: 100%;
+	}
+	.toDisplay {
+		display: block;
+	}
+	.toHide {
+		display: none;
 	}
 	.btn {
 		width: 100vw;
