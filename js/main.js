@@ -198,48 +198,48 @@
     $eventOne.click(function(){
       var $active = $('#descriptions').find('.active');
       $active.removeClass('active');
-      $descOne.addClass('active');
+      $descOne.slideToggle();
     });
 
     $eventTwo.click(function(){
       var $active = $('#descriptions').find('.active');
       $active.removeClass('active');
-      $descTwo.addClass('active');
+      $descTwo.slideToggle();
     });
 
     $eventThree.click(function(){
       var $active = $('#descriptions').find('.active');
       $active.removeClass('active');
-      $descThree.addClass('active');
+      $descThree.slideToggle();
     });
 
     $eventFour.click(function(){
       var $active = $('#descriptions').find('.active');
       $active.removeClass('active');
-      $descFour.addClass('active');
+      $descFour.slideToggle();
     });
 
     $eventFive.click(function(){
       var $active = $('#descriptions').find('.active');
       $active.removeClass('active');
-      $descFive.addClass('active');
+      $descFive.slideToggle();
     });
 
     $eventSix.click(function(){
       var $active = $('#descriptions').find('.active');
       $active.removeClass('active');
-      $descSix.addClass('active');
+      $descSix.slideToggle();
     });
 
     $eventSeven.click(function(){
       var $active = $('#descriptions').find('.active');
       $active.removeClass('active');
-      $descSeven.addClass('active');
+      $descSeven.slideToggle();
     });
 
     $eventEight.click(function(){
       var $active = $('#descriptions').find('.active');
       $active.removeClass('active');
-      $descEight.addClass('active');
+      $descEight.slideToggle();
     });
     
