@@ -355,6 +355,31 @@ p {
 	#descriptions div img {
 		width: 100%;
 	}
+	// Fixes event effect for mobile, avoids right column elements sticking outside of viewport
+	#descTwo {
+		margin-right: auto;
+	}
+	#descTwo p {
+		width: 111%
+	}
+	#descFour {
+		margin-right: auto;
+	}
+	#descFour p {
+		width: 111%
+	}
+	#descSix {
+		margin-right: auto;
+	}
+	#descSix p {
+		width: 111%
+	}
+	#descEight {
+		margin-right: auto;
+	}
+	#descEight p {
+		width: 111%
+	}
 	.toDisplay {
 		display: block;
 	}
@@ -419,7 +444,19 @@ p {
  	#red h2 {
  		font-size: 2.2rem;
  	}
- 	
+
+	#descFour {
+		margin-right: auto;
+	}
+	#descFour p {
+		width: 111%
+	}
+	#descEight {
+		margin-right: auto;
+	}
+ 	#descEight p {
+		width: 111%
+	}
  	
  }
 
