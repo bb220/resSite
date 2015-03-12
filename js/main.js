@@ -193,9 +193,14 @@
   
 
 
-    //On click, Event Description appears
+    //On click of picture or open description, Event Description appears
    
     $eventOne.click(function(){
+      var $active = $('#descriptions').find('.active');
+      $active.removeClass('active');
+      $descOne.slideToggle();
+    });
+    $descOne.click(function(){
       var $active = $('#descriptions').find('.active');
       $active.removeClass('active');
       $descOne.slideToggle();
@@ -206,8 +211,18 @@
       $active.removeClass('active');
       $descTwo.slideToggle();
     });
+    $descTwo.click(function(){
+      var $active = $('#descriptions').find('.active');
+      $active.removeClass('active');
+      $descTwo.slideToggle();
+    });
 
     $eventThree.click(function(){
+      var $active = $('#descriptions').find('.active');
+      $active.removeClass('active');
+      $descThree.slideToggle();
+    });
+    $descThree.click(function(){
       var $active = $('#descriptions').find('.active');
       $active.removeClass('active');
       $descThree.slideToggle();
@@ -218,8 +233,18 @@
       $active.removeClass('active');
       $descFour.slideToggle();
     });
+    $descFour.click(function(){
+      var $active = $('#descriptions').find('.active');
+      $active.removeClass('active');
+      $descFour.slideToggle();
+    });
 
     $eventFive.click(function(){
+      var $active = $('#descriptions').find('.active');
+      $active.removeClass('active');
+      $descFive.slideToggle();
+    });
+    $descFive.click(function(){
       var $active = $('#descriptions').find('.active');
       $active.removeClass('active');
       $descFive.slideToggle();
@@ -230,14 +255,29 @@
       $active.removeClass('active');
       $descSix.slideToggle();
     });
+    $descSix.click(function(){
+      var $active = $('#descriptions').find('.active');
+      $active.removeClass('active');
+      $descSix.slideToggle();
+    });
 
     $eventSeven.click(function(){
       var $active = $('#descriptions').find('.active');
       $active.removeClass('active');
       $descSeven.slideToggle();
     });
+    $descSeven.click(function(){
+      var $active = $('#descriptions').find('.active');
+      $active.removeClass('active');
+      $descSeven.slideToggle();
+    });
 
     $eventEight.click(function(){
+      var $active = $('#descriptions').find('.active');
+      $active.removeClass('active');
+      $descEight.slideToggle();
+    });
+    $descEight.click(function(){
       var $active = $('#descriptions').find('.active');
       $active.removeClass('active');
       $descEight.slideToggle();
