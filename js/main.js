@@ -136,31 +136,31 @@
           $menuToggle.trigger('click');
           //scrolls to section
              $htmlbody.animate({
-                  scrollTop: $("#red").offset().top 
+                  scrollTop: $("#red").offset().top - 30
               }, 500);
         });
         $eventsBtn.click(function(){
           $menuToggle.trigger('click');
             $htmlbody.animate({
-                  scrollTop: $("#events").offset().top 
+                  scrollTop: $("#events").offset().top - 30
               }, 500);
         });
         $getinvolvedBtn.click(function(){
           $menuToggle.trigger('click');
             $htmlbody.animate({
-                  scrollTop: $("#blue").offset().top 
+                  scrollTop: $("#blue").offset().top - 30
               }, 500);
         });
         $teamBtn.click(function(){
           $menuToggle.trigger('click');
             $htmlbody.animate({
-                  scrollTop: $("#team").offset().top 
+                  scrollTop: $("#team").offset().top - 30
               }, 500);
         });
         $contactBtn.click(function(){
           $menuToggle.trigger('click');
             $htmlbody.animate({
-                  scrollTop: $("#green").offset().top 
+                  scrollTop: $("#green").offset().top - 30
               }, 500);
         });
         $reslogotext.click(function(){
