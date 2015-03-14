@@ -16,6 +16,8 @@ input,
 textarea,
 button,
 select,
+img,
+div,
 .btn,
 a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -203,6 +205,9 @@ footer a {
 
 }
 
+.secTitle {
+	font-weight: 400;
+}
 h2 {
 	font-weight: 300;
 }
@@ -219,6 +224,7 @@ p {
 }
 #blue h1 {
 	color: white;
+	font-weight: 400;
 }
 #blue h4 {
 	color: white;
@@ -256,8 +262,12 @@ p {
 #red h6 {
 	color: whitesmoke;
 }
+#red h1 {
+	font-weight: 600;
+}
 #green h1 {
 	color :white;
+	font-weight: 400;
 }
 #red h3 {
 	color: white;
@@ -346,6 +356,9 @@ p {
 #eventContainer {
 	padding: 2px;
 }
+#teamRow h4 {
+	font-weight: 400;
+}
 .toDisplay {
 	display: none;
 }
@@ -433,6 +446,9 @@ p {
 	}
 	.icons {
 		height: 4em;
+	}
+	#teamRow p {
+		font-size: 0.8rem;
 	}
 	
  } 			 
