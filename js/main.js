@@ -8,6 +8,7 @@
         var $getinvolvedBtn = $('#getinvolvedBtn');
         var $teamBtn = $('#teamBtn');
         var $contactBtn = $('#contactBtn');
+        var $contactusBtn = $('#contactusBtn');
         var $reslogotext = $('#reslogotext');
         var $htmlbody = $('html, body');
         var $topPage = $('#topPage');
@@ -113,14 +114,26 @@
         offset: 70
       })
 
-      //Contact
+      //our Members
       var contactWaypoint = new Waypoint({
         element: document.getElementById('green'),
         handler: function() {
-          console.log('contact info');
+          console.log('members');
           var $toDeactivate = $right.find('.active');
           $toDeactivate.removeClass('active');
           $contactBtn.addClass('active');
+        },
+        offset: 70
+      })
+
+      //Contact form
+      var contactusWaypoint = new Waypoint({
+        element: document.getElementById('grey'),
+        handler: function() {
+          console.log('contactform');
+          var $toDeactivate = $right.find('.active');
+          $toDeactivate.removeClass('active');
+          $contactusBtn.addClass('active');
         },
         offset: 70
       })
@@ -162,6 +175,12 @@
             $htmlbody.animate({
                   scrollTop: $("#green").offset().top - 69
               }, 500);
+        });
+        $contactusBtn.click(function(){
+          $menuToggle.trigger('click');
+          $htmlbody.animate({
+                  scrollTop: $("#grey").offset().top - 69
+          }, 500);
         });
         $reslogotext.click(function(){
             $htmlbody.animate({

@@ -24,6 +24,9 @@ a {
   -webkit-tap-highlight-color: transparent; 
 }
 
+#grey textarea {
+	height: 200px;
+}
 #reslogotext{
 	height: 70px;
 	cursor: pointer;
@@ -108,6 +111,14 @@ a {
  }
  #contactBtn:hover {
  	background-color: $money;
+ 	color: $white;
+ }
+ #contactusBtn.active {
+ 	background-color: $dark;
+ 	color: $white;
+ }
+  #contactusBtn:hover {
+ 	background-color: $dark;
  	color: $white;
  }
 
@@ -201,7 +212,7 @@ footer {
 }
 
 footer a {
-	color: white;
+	color: $dark;
 
 }
 
@@ -268,6 +279,9 @@ p {
 }
 #green h1 {
 	color :white;
+	font-weight: 400;
+}
+#grey h1 {
 	font-weight: 400;
 }
 #red h3 {
