@@ -19,7 +19,7 @@
         
 
 
-      //Sets the height of the landing page to fit the screen, 80px is the height of the navbar
+      //Sets the height of the landing page to fit the screen, 70px is the height of the navbar
         $topPage.css("height", viewportHeight - 70);
 
 
@@ -258,7 +258,7 @@
       $descFour.slideToggle();
     });
 
-    $eventFive.click(function(){
+    /*$eventFive.click(function(){
       var $active = $('#descriptions').find('.active');
       $active.removeClass('active');
       $descFive.slideToggle();
@@ -300,5 +300,5 @@
       var $active = $('#descriptions').find('.active');
       $active.removeClass('active');
       $descEight.slideToggle();
-    });
+    }); */
     

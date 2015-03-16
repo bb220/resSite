@@ -171,6 +171,9 @@ nav {
 .topSpace {
 	height:100px;
 }
+.topSpace2 {
+	height:75px;
+}
 
 .bottomSpace {
 	height: 120px;
@@ -293,6 +296,12 @@ p {
 .event {
 	cursor: pointer;
 }
+ul #eventContainer h4 {
+	font-weight: 400;
+}
+#descFive h4 {
+	font-weight: 400;
+}
 #desciptions .active {
 	display: block;
 }
@@ -333,7 +342,7 @@ p {
 	display: block;
 }
 
-#descFive {
+/* #descFive {
 	display: none;
 	cursor: pointer;
 
@@ -366,7 +375,7 @@ p {
 }
 #descEight.active {
 	display: block;
-}
+} */
 
 #eventContainer {
 	padding: 2px;
@@ -450,6 +459,9 @@ p {
  		margin: 0;
  	}
  	.topSpace {
+	height:50px;
+	}
+	.topSpace2 {
 	height:50px;
 	}
 
