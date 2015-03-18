@@ -393,6 +393,9 @@ ul #eventContainer h4 {
 .toHide strong {
 		font-weight: 400;
 	}
+.toHideMed {
+		display: block;
+	}
 @media only screen and (max-width: 40em) {
 	#reslogotext{
 	height: 50px;
@@ -536,6 +539,9 @@ ul #eventContainer h4 {
 	}
  	#descEight p {
 		width: 111%
+	}
+	.toHideMed {
+		display: none;
 	}
  	
  }
