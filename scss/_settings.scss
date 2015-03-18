@@ -390,6 +390,9 @@ ul #eventContainer h4 {
 .toHide {
 	display: block;
 }
+.toHide strong {
+		font-weight: 400;
+	}
 @media only screen and (max-width: 40em) {
 	#reslogotext{
 	height: 50px;
@@ -430,6 +433,9 @@ ul #eventContainer h4 {
 	}
 	.toDisplay {
 		display: block;
+	}
+	.toDisplay strong {
+		font-weight: 400;
 	}
 	.toHide {
 		display: none;
@@ -481,13 +487,8 @@ ul #eventContainer h4 {
 	#teamRow p {
 		font-size: 0.8rem;
 	}
-	#Be {
-		text-align:center;
-
-	}
-	#BeContainer {
-		padding: 0;
-	}
+	
+	
 	#descFive h4 {
 		text-align: center;
 	}
