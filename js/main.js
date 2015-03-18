@@ -198,17 +198,17 @@
     var $eventThree = $('#eventThree');
     var $eventFour = $('#eventFour');
     var $eventFive = $('#eventFive');
-    var $eventSix = $('#eventSix');
+    /*var $eventSix = $('#eventSix');
     var $eventEight = $('#eventEight');
-    var $eventSeven = $('#eventSeven');
+    var $eventSeven = $('#eventSeven'); */
     var $descOne = $('#descOne');
     var $descTwo = $('#descTwo');
     var $descThree = $('#descThree');
     var $descFour = $('#descFour');
     var $descFive = $('#descFive');
-    var $descSix = $('#descSix');
+    /*var $descSix = $('#descSix');
     var $descSeven = $('#descSeven');
-    var $descEight = $('#descEight');
+    var $descEight = $('#descEight');*/
   
 
 
