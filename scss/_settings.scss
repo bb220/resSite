@@ -403,6 +403,12 @@ ul #eventContainer h4 {
 #blue input {
 		height: 3.5375rem;
 	}
+#send {
+	background-color: #2A9427;
+}
+#send:hover {
+	background-color: #1F711D;
+}
 @media only screen and (max-width: 40em) {
 	#reslogotext{
 	height: 50px;
