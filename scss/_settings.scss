@@ -57,9 +57,6 @@ a {
  	width: 120px;
  }
 
- #contactBtn {
- 	width: 120px;
- }
 
 
  nav {
@@ -111,14 +108,6 @@ a {
  }
  #contactBtn:hover {
  	background-color: $money;
- 	color: $white;
- }
- #contactusBtn.active {
- 	background-color: $dark;
- 	color: $white;
- }
-  #contactusBtn:hover {
- 	background-color: $dark;
  	color: $white;
  }
 
@@ -215,10 +204,11 @@ nav {
 footer {
 	text-align: center;
 	font-size: 0.6em;
+	color: $dark;
 }
 
 footer a {
-	color: $white;
+	color: $dark;
 
 }
 
@@ -535,9 +525,6 @@ ul #eventContainer h4 {
 	 	width: 120px;
 	 }
 
-	 #contactBtn {
-	 	width: 120px;
-	 }
 
  	#red h2 {
  		font-size: 2.2rem;
