@@ -233,8 +233,18 @@ p {
 	color: white;
 	font-weight: 400;
 }
+#blue h2 {
+	color: white;
+}
 #blue h4 {
 	color: white;
+}
+#blue a {
+	color: #F4F6F7;
+}
+.indicates-required {
+	color: #F4F6F7;
+	font-size: 80%;
 }
 #red h2 {
 	color: whitesmoke;
@@ -390,9 +400,7 @@ ul #eventContainer h4 {
 .toDisplayMed {
 	display: none;
 }
-#blue input {
-		height: 3.5375rem;
-	}
+
 #send {
 	background-color: #729006;
 }
@@ -501,9 +509,7 @@ ul #eventContainer h4 {
 	#descFive h5 {
 		text-align: center;
 	}
-	#blue input {
-		height: 2.9375rem;
-	}
+	
 	
  } 			 
 
