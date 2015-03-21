@@ -303,8 +303,8 @@
               'from_email': decodeURIComponent($form_data.email),
               'to': [
                   {
-                    'email':'bellero.brandon@gmail.com',
-                    'name': 'brandon',
+                    'email':'ruentrepreneur@gmail.com',
+                    'name': 'RUtrep',
                     'type': 'to'
                   },
                 ],
@@ -316,7 +316,7 @@
          }).done(function(response) {
            $('#status').text('Email Sent Successfully!');
            $("form#contact input,form#contact textarea").prop('disabled', true);
-           $('form#contact #submit').hide();
+           
          }).fail(function(e) {
            $('#status').text('Whoopsie! Your email failed to send due to: '+e.status+' '+e.statusText+'.');
          });
