@@ -21,12 +21,13 @@
 
       //Sets the height of the landing page to fit the screen, 70px is the height of the navbar
         $topPage.css("height", viewportHeight - 70);
-
+      //slogan fade
+        $slogan.delay(900).fadeTo(100, 1);
 
       //Adjusting "active" class to update with user scroll via waypoints plugin
       //There are two waypoints for each section: one at the top and one at the bottom of the section
-
-      //About
+      //id names don't necessarilly correspond with the content
+      //First section
       var aboutWaypoint = new Waypoint({
         element: $red,
         handler: function() {
@@ -48,7 +49,7 @@
         offset: 70
       })
 
-      //Events
+      //Second Section
       var eventsWaypoint = new Waypoint({
         element: document.getElementById('events'),
         handler: function() {
@@ -70,7 +71,7 @@
         offset: 70
       })
 
-      //Get Involved
+      //Third Section
       var getinvolvedWaypoint = new Waypoint({
         element: document.getElementById('blue'),
         handler: function() {
@@ -92,7 +93,7 @@
         offset: 70
       })
 
-      //Meet the Team
+      //Fourth Section
       var teamWaypoint = new Waypoint({
         element: document.getElementById('team'),
         handler: function() {
@@ -114,7 +115,7 @@
         offset: 70
       })
 
-      //our Members
+      //Fifth Section
       var contactWaypoint = new Waypoint({
         element: document.getElementById('green'),
         handler: function() {
@@ -130,8 +131,7 @@
 
      
 
-      //slogan fade
-        $slogan.delay(900).fadeTo(100, 1);
+    
         
       //On click, navbar links scroll to corresponding section
         $aboutBtn.click(function(){
@@ -197,7 +197,7 @@
   
 
 
-    //On click of picture or open description, Event Description appears
+    //On click of picture or description, Event Description toggles
    
     $eventOne.click(function(){
       var $active = $('#descriptions').find('.active');
@@ -287,3 +287,38 @@
       $descEight.slideToggle();
     }); */
     
+    $(document).on('submit','form#contact',function(e){
+      e.preventDefault();
+      var $this = $(this);
+      var $form_data = JSON.parse('{"' + decodeURI($this.serialize()).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
+      if($form_data.honey==""){
+        $('#status').text('Sending Email...');
+        //Messages Calls => https://mandrillapp.com/api/docs/messages.html        
+        $.ajax({
+          type: 'POST',
+          url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+          data: {
+            'key': 'V8iEOxGT5MxpqRSX75dmAw',
+            'message': {
+              'from_email': decodeURIComponent($form_data.email),
+              'to': [
+                  {
+                    'email':'bellero.brandon@gmail.com',
+                    'name': 'brandon',
+                    'type': 'to'
+                  },
+                ],
+              'autotext': 'true',
+                'subject': 'Contact Form: '+window.location,
+              'html': $form_data.message
+            }
+          },
+         }).done(function(response) {
+           $('#status').text('Email Sent Successfully!');
+           $("form#contact input,form#contact textarea").prop('disabled', true);
+           $('form#contact #submit').hide();
+         }).fail(function(e) {
+           $('#status').text('Whoopsie! Your email failed to send due to: '+e.status+' '+e.statusText+'.');
+         });
+      }
+    });

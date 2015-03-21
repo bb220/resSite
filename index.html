@@ -526,38 +526,42 @@
          <p>Feel free to reach out to us with any requests or inquiries.</p>
         </div>
        </div>
-       <form>
+       <form id="contact">
               <div class="row">
                 <div class="small-12 medium-4  columns ">
                   
-
-                    <input type="text" placeholder="Name" />
+                    <input type="hidden" id="honey" name="honey"/>
+                    <input type="text" name="name" placeholder="Name" />
                 </div>
               </div>
               <div class="row">
                 <div class="small-12 medium-4 columns ">
-                    <input type="text" placeholder="Email Address" />
+                    <input type="text" id="email" name="email" data-focusout="Email" placeholder="Email Address" />
                 </div>
                 
                 <div class="small-12 medium-4 end columns">
-                    <input type="text" placeholder="Company/School" />
+                    <input type="text" name="company/school" placeholder="Company/School" />
                 </div>
                 
               </div>
               <div class="row">
                 <div class="small-12 medium-8 columns">
-                    <textarea type="text" placeholder="Your message here" ></textarea>
+                    <textarea type="text" name="messsage" placeholder="Your message here" ></textarea>
                 </div>
                 <div class="small-10 small-offset-1 medium-offset-0 end medium-4 columns">
                   <div class="topSpace toHide"></div>
                   <div class="smallSpace toHide"></div>
                   <div class="smallSpace toHide"></div>
                   
-              <a href="#" id="send" class="button expand">Send</a>
+              <input type="submit" id="send" class="button expand"/>
               
             </div>
               </div>
             </form>
+            <div class="row text-center">
+              <div id="status"></div>
+            </div>
+            
             <div class="row">
             
           </div>
