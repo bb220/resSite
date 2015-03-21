@@ -290,7 +290,13 @@
     $(document).on('submit','form#contact',function(e){
       e.preventDefault();
       var $this = $(this);
-      var $form_data = JSON.parse('{"' + decodeURI($this.serialize()).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
+      var $form_data = JSON.parse('{"' + decodeURIComponent(decodeURI($this.serialize())).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
+      //replaces + with spaces for increased legibility
+      var re = /\+/g;
+      $form_data.name = $form_data.name.replace(re, ' ');
+      $form_data.companyschool = $form_data.companyschool.replace(re, ' ');
+      $form_data.message = $form_data.message.replace(re, ' ');
+
       if($form_data.honey==""){
         $('#status').text('Sending Email...');
         //Messages Calls => https://mandrillapp.com/api/docs/messages.html        
@@ -303,14 +309,14 @@
               'from_email': decodeURIComponent($form_data.email),
               'to': [
                   {
-                    'email':'ruentrepreneur@gmail.com',
+                    'email':'info@rutrep.com',
                     'name': 'RUtrep',
                     'type': 'to'
                   },
                 ],
               'autotext': 'true',
-                'subject': 'Contact Form: '+window.location,
-              'html': $form_data.message
+                'subject': 'Contact Form: '+ $form_data.name + ' from ' + $form_data.companyschool,
+              'html': $form_data.message + ' - ' + $form_data.name + ', ' + $form_data.companyschool
             }
           },
          }).done(function(response) {
