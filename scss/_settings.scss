@@ -28,7 +28,7 @@ a {
 	height: 200px;
 }
 #reslogotext{
-	height: 70px;
+	height: 53px;
 	cursor: pointer;
 }
 
@@ -41,9 +41,9 @@ a {
 }
 
 .btn {
- 	height: 70px;
+ 	height: 55px;
  	text-align: center;
- 	line-height: 68px;
+ 	line-height: 52px;
  	cursor: pointer;
  	width: 100px;
  	font-weight: 400;
@@ -67,6 +67,7 @@ a {
 	color: grey;
 	font-size: 0.8rem;
 }
+
 
  //Navbar tab colors and active states
  
@@ -412,8 +413,8 @@ ul #eventContainer h4 {
 }
 @media only screen and (max-width: 40em) {
 	#reslogotext{
-	height: 50px;
-	margin-top: 10px;
+	height: 47px;
+	margin-top: 3px;
 	margin-left: 4px;
 	}	
 	#descriptions div img {
@@ -517,9 +518,6 @@ ul #eventContainer h4 {
  } 			 
 
  @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
- 	#reslogotext {
- 	height: 64px;
- 	}
  	.btn {
  		width: 80px;
  	}
@@ -1956,7 +1954,7 @@ $has-tip-cursor-type: pointer;
 // Height and margin
 
 
-$topbar-height: rem-calc(70); 
+$topbar-height: rem-calc(55); 
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
