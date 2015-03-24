@@ -18,13 +18,26 @@
         var $red = $('#red');
         var $bottomRed = $('#bottomRed');
         var $menuToggle = $('#menuToggle');
+        var $topbar = $('.top-bar');
+        var $btn = $('.btn');
         
 
 
       //Sets the height of the landing page to fit the screen, 70px is the height of the navbar
         $topPage.css("height", viewportHeight - 55);
-      //slogan fade
-        $slogan.delay(900).fadeTo(100, 1);
+      
+
+      //changes top-bar bg color
+      var topBar = new Waypoint({
+        element: $topbar,
+        handler: function() {
+          console.log('top-bar activate');
+          $topbar.css("background", "white");
+          $topbar.addClass("shadow");
+          $btn.css("display", "block");
+        },
+        
+      })
 
       //Adjusting "active" class to update with user scroll via waypoints plugin
       //There are two waypoints for each section: one at the top and one at the bottom of the section
@@ -32,11 +45,22 @@
       //First section
       var aboutWaypoint = new Waypoint({
         element: $red,
-        handler: function() {
+        handler: function(direction) {
+          //changes top bar background to none
+          if (direction == "up") {
+            console.log('top-bar deactivate');
+            $topbar.css("background", "none");
+            $topbar.removeClass("shadow");
+            var $toDeactivate = $right.find('.active');
+            $toDeactivate.removeClass('active');
+            $btn.css("display", "none");
+          }
+          else {
           console.log('About Section');
           var $toDeactivate = $right.find('.active');
           $toDeactivate.removeClass('active');
           $aboutBtn.addClass('active');
+          }
         },
         offset: 55
       })

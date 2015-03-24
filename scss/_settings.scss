@@ -30,6 +30,7 @@ a {
 #reslogotext{
 	height: 53px;
 	cursor: pointer;
+	margin-left: -5px;
 }
 
 #topPage {
@@ -45,17 +46,13 @@ a {
  	text-align: center;
  	line-height: 52px;
  	cursor: pointer;
- 	width: 100px;
+ 	width: auto;
  	font-weight: 400;
+ 	padding: 0 20px;
+ 	display: none;
  }
 
- #getinvolvedBtn {
-	width: 120px;
- }
-
- #eventsBtn {
- 	width: 120px;
- }
+ 
 
 
 
@@ -68,7 +65,10 @@ a {
 	font-size: 0.8rem;
 }
 
-
+#splash {
+	background: url('/img/spark.jpg') center;
+	background-size: cover;
+}
  //Navbar tab colors and active states
  
  #aboutBtn.active {
@@ -122,9 +122,6 @@ a {
 	background-color: #f4f4f4;
 }
 
-nav {
-	box-shadow: 0 8px 10px -10px black;
-}
 
 
 
@@ -136,8 +133,21 @@ nav {
  
 
 #slogan {
-	color: $dark;
-	opacity: 0;
+	color: white;
+	font-size: 68px;
+	font-weight: bold;
+	margin-top: 10vh;
+}
+
+#bigLogo {
+	height: 50px;
+	vertical-align: top;
+	margin-left: 3px;
+	margin-top: 2px;
+}
+
+.shadow {
+	box-shadow: 0 8px 10px -10px black;
 }
 
 
@@ -411,12 +421,18 @@ ul #eventContainer h4 {
 #submit:hover {
 	background-color: #5D7604;
 }
+
 @media only screen and (max-width: 40em) {
 	#reslogotext{
-	height: 47px;
-	margin-top: 3px;
-	margin-left: 4px;
+	height: 42px;
+	margin-left: -28px;
 	}	
+	#bigLogo {
+		vertical-align: super;
+		height: 36px;
+		margin-left: 0;
+		margin-top: 1px;
+	}
 	#descriptions div img {
 		width: 100%;
 	}
@@ -426,6 +442,11 @@ ul #eventContainer h4 {
 	}
 	#descTwo p {
 		width: 111%
+	}
+	#slogan {
+		margin-top: 5vh;
+		font-size: 55px;
+		line-height: 60px;
 	}
 	#descFive {
 		margin-right: auto;
@@ -513,24 +534,26 @@ ul #eventContainer h4 {
 	#descFive h5 {
 		text-align: center;
 	}
+
+	#logo-container {
+ 		padding: 5px;
+ 		}
+
+
 	
 	
  } 			 
 
  @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
  	.btn {
- 		width: 80px;
+ 		padding: 0 15px;
  	}
  	.splashSpace {
  		height: 150px;
  	}
- 	#getinvolvedBtn {
-	width: 120px;
-	 }
+ 	
 
-	 #eventsBtn {
-	 	width: 120px;
-	 }
+	 
 
 
  	#red h2 {
@@ -1948,7 +1971,7 @@ $has-tip-cursor-type: pointer;
 
 // Background color for the top bar
  $topbar-bg-color: $white;
- $topbar-bg: $topbar-bg-color;
+ $topbar-bg: none;
 
 
 // Height and margin
