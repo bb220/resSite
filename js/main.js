@@ -1,3 +1,5 @@
+//my js
+
 
     $(function(){
       //DOM cache
