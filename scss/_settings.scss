@@ -259,7 +259,7 @@ p {
 }
 .indicates-required {
 	color: #F4F6F7;
-	font-size: 80%;
+	font-size: 60%;
 }
 #red h2 {
 	color: whitesmoke;
@@ -423,6 +423,35 @@ ul #eventContainer h4 {
 	background-color: #5D7604;
 }
 
+#blue label {
+	color: white;
+	font-weight: 400;
+}
+
+#mc_embed_signup input {
+	border-radius: 8px;
+}
+
+#green input {
+	border-radius: 8px;
+}
+
+#green textarea {
+	border-radius: 8px;
+}
+
+
+
+#mc_embed_signup .first {
+	padding-right: 5px;
+	height: 68px;
+}
+#mc_embed_signup .last {
+	padding-left: 5px;
+	height: 68px;
+}
+
+
 @media only screen and (max-width: 40em) {
 	#reslogotext{
 	height: 42px;
@@ -542,6 +571,15 @@ ul #eventContainer h4 {
 	#logo-container {
  		padding: 5px;
  		}
+
+	#mc_embed_signup .first {
+		padding-right: .9375rem;
+		height: 68px;
+		}
+	#mc_embed_signup .last {
+		padding-left: .9375rem;
+		height: 68px;
+		}
 
 
 	
