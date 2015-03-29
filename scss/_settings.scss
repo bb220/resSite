@@ -358,15 +358,18 @@ ul #eventContainer h4 {
 	display: block;
 }
 
-/* #descFive {
+ #descFive {
 	display: none;
 	cursor: pointer;
+	width: 100%;
+	margin-left: 50%;
 
 }
 #descFive.active {
 	display: block;
 }
 
+/*
 #descSix {
 	display: none;
 	cursor: pointer;
@@ -395,6 +398,10 @@ ul #eventContainer h4 {
 
 #eventContainer {
 	padding: 2px;
+}
+
+#eventFive {
+	margin-left: 50%;
 }
 #teamRow h4 {
 	font-weight: 400;
@@ -604,10 +611,19 @@ ul #eventContainer h4 {
 	#descFour .push-fix {
 		padding-right: 0;
 	}
+	#descFive {
+		width: 104%;
+	}
+	#descFive .push-fix {
+		padding-right: 0;
+	}
 	.push-fix {
 		padding-right: 0;
 	}
-
+	
+	#eventFive {
+	margin-left: 0;
+	}
 
 
 	
@@ -623,9 +639,6 @@ ul #eventContainer h4 {
  	}
  	
 
-	 
-
-
  	#red h2 {
  		font-size: 2.2rem;
  	}
@@ -636,10 +649,7 @@ ul #eventContainer h4 {
 	#descFour p {
 		width: 111%
 	}
-	#descFive {
-		margin-right: auto;
-		margin-left: auto;
-	}
+
 	#descEight {
 		margin-right: auto;
 	}
@@ -675,6 +685,7 @@ ul #eventContainer h4 {
 		#descFour .push-fix {
 			padding-right: 0;
 		}
+		
 
 
  	

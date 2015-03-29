@@ -269,7 +269,7 @@
       $descFour.slideToggle();
     });
 
-    /*$eventFive.click(function(){
+    $eventFive.click(function(){
       var $active = $('#descriptions').find('.active');
       $active.removeClass('active');
       $descFive.slideToggle();
@@ -279,6 +279,7 @@
       $active.removeClass('active');
       $descFive.slideToggle();
     });
+    /*
 
     $eventSix.click(function(){
       var $active = $('#descriptions').find('.active');
