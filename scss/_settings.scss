@@ -483,12 +483,7 @@ ul #eventContainer h4 {
 		width: 100%;
 	}
 	// Fixes event effect for mobile, avoids right column elements sticking outside of viewport
-	#descTwo {
-		margin-right: auto;
-	}
-	#descTwo p {
-		width: 111%
-	}
+	
 	#slogan {
 		margin-top: 5vh;
 		font-size: 55px;
@@ -498,24 +493,7 @@ ul #eventContainer h4 {
 		margin-right: auto;
 		margin-left: auto;
 	}
-	#descFour {
-		margin-right: auto;
-	}
-	#descFour p {
-		width: 111%
-	}
-	#descSix {
-		margin-right: auto;
-	}
-	#descSix p {
-		width: 111%
-	}
-	#descEight {
-		margin-right: auto;
-	}
-	#descEight p {
-		width: 111%
-	}
+	
 	.toDisplay {
 		display: block;
 	}
@@ -593,15 +571,43 @@ ul #eventContainer h4 {
 		padding-left: .9375rem;
 		height: 68px;
 		}
-		#emailcont {
-			padding-right: 0.9375rem;
+	#emailcont {
+		padding-right: 0.9375rem;
 		}
-		#companyschoolcont {
-			padding-left: 0.9375rem;
+	#companyschoolcont {
+		padding-left: 0.9375rem;
 		}
-		#namecont {
-			padding-right: 0.9375rem;
-		}
+	#namecont {
+		padding-right: 0.9375rem;
+	}
+	#descOne {
+		width: 104%;
+	}
+	#descOne .push-fix {
+		padding-right: 0;
+	}
+	#descTwo {
+		width: 104%;
+	}
+	#descTwo .push-fix {
+		padding-right: 0;
+	}
+	#descThree {
+		width: 104%;
+	}
+	#descThree .push-fix {
+		padding-right: 0;
+	}
+	#descFour {
+		width: 104%;
+	}
+	#descFour .push-fix {
+		padding-right: 0;
+	}
+	.push-fix {
+		padding-right: 0;
+	}
+
 
 
 	
@@ -656,6 +662,20 @@ ul #eventContainer h4 {
 		#namecont {
 			padding-right: 0.9375rem;
 		}
+
+		#descTwo {
+		width: 104%;
+		}
+		#descTwo .push-fix {
+			padding-right: 0;
+		}
+		#descFour {
+			width: 104%;
+		}
+		#descFour .push-fix {
+			padding-right: 0;
+		}
+
 
  	
  }
