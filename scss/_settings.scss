@@ -434,6 +434,19 @@ ul #eventContainer h4 {
 
 #green input {
 	border-radius: 8px;
+	margin: 0;
+}
+#green label {
+	color: white;
+}
+#emailcont {
+	padding-right: 5px;
+}
+#companyschoolcont {
+	padding-left:5px;
+}
+#namecont {
+	padding-right:5px;
 }
 
 #green textarea {
@@ -580,6 +593,15 @@ ul #eventContainer h4 {
 		padding-left: .9375rem;
 		height: 68px;
 		}
+		#emailcont {
+			padding-right: 0.9375rem;
+		}
+		#companyschoolcont {
+			padding-left: 0.9375rem;
+		}
+		#namecont {
+			padding-right: 0.9375rem;
+		}
 
 
 	
@@ -624,6 +646,16 @@ ul #eventContainer h4 {
 	.toDisplayMed {
 	display: block;
 }
+
+		#emailcont {
+			padding-right: 0.9375rem;
+		}
+		#companyschoolcont {
+			padding-left: 0.9375rem;
+		}
+		#namecont {
+			padding-right: 0.9375rem;
+		}
 
  	
  }
