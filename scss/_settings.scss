@@ -48,6 +48,7 @@ a {
  	width: auto;
  	font-weight: 400;
  	padding: 0 20px;
+ 	display: none;
  }
 
  
@@ -73,17 +74,22 @@ a {
 
 
  nav {
- 	opacity: 0.9;
+ 	opacity: 0.95;
  }
 
  nav li {
  	color: $dark;
  }
 
-.top-bar {
-	background: white;
-	box-shadow: 0 8px 10px -10px black;
+ #menuToggle {
+ 	display: none;
+ }
 
+.top-bar {
+	background: none;
+}
+.shadow {
+	box-shadow: 0 8px 10px -10px black;
 }
 #learnMore {
 	color: grey;
@@ -91,7 +97,7 @@ a {
 }
 
 #splash {
-	background: url('/img/spark.jpg') center top;
+	background: url('/img/spark.jpg') center;
 	background-size: cover;
 }
  //Navbar tab colors and active states
@@ -2105,7 +2111,7 @@ $has-tip-cursor-type: pointer;
 
 // Background color for the top bar
  $topbar-bg-color: $white;
- $topbar-bg: $topbar-bg-color;
+ $topbar-bg: none;
 
 
 // Height and margin

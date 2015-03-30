@@ -1,15 +1,6 @@
 //my js
 
-//headroom
-// grab an element
-var myElement = document.querySelector("#header");
-// construct an instance of Headroom, passing the element
-var headroom  = new Headroom(myElement);
-// initialise
-headroom.init(); 
 
-
-//jQuery
     $(function(){
       //DOM cache
         var $slogan = $('#slogan');
@@ -29,7 +20,15 @@ headroom.init();
         var $menuToggle = $('#menuToggle');
         var $topbar = $('.top-bar');
         var $btn = $('.btn');
+        var $icon = $('#menuToggle');
         
+      //headroom
+      // grab an element
+      var myElement = document.querySelector("#header");
+      // construct an instance of Headroom, passing the element
+      var headroom  = new Headroom(myElement);
+      // initialise
+      headroom.init(); 
 
       //Sets the height of the landing page to fit the screen, 70px is the height of the navbar
         $topPage.css("height", viewportHeight);
@@ -40,6 +39,7 @@ headroom.init();
         element: $topbar,
         handler: function() {
           console.log('top-bar activate');
+          
         },
         
       })
@@ -54,14 +54,22 @@ headroom.init();
           //changes top bar background to none
           if (direction == "up") {
             console.log('top-bar deactivate');
+            $topbar.css("background", "none");
+            $topbar.removeClass("shadow");
             var $toDeactivate = $right.find('.active');
             $toDeactivate.removeClass('active');
+            $btn.css("display", "none");
+            $icon.css("display", "none");
           }
           else {
           console.log('About Section');
+          $topbar.css("background", "white");
+          $topbar.addClass("shadow");
+          $btn.css("display", "block");
           var $toDeactivate = $right.find('.active');
           $toDeactivate.removeClass('active');
           $aboutBtn.addClass('active');
+          $icon.css("display","block");
           }
         },
         
@@ -197,7 +205,7 @@ headroom.init();
         
         $reslogotext.click(function(){
             $htmlbody.animate({
-                  scrollTop: $topPage.offset().top
+                  scrollTop: $topPage.offset().top 
               }, 500);
              
         });
