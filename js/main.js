@@ -34,16 +34,6 @@
         $topPage.css("height", viewportHeight);
       
 
-      //changes top-bar bg color
-      var topBar = new Waypoint({
-        element: $topbar,
-        handler: function() {
-          console.log('top-bar activate');
-          
-        },
-        
-      })
-
       //Adjusting "active" class to update with user scroll via waypoints plugin
       //There are two waypoints for each section: one at the top and one at the bottom of the section
       //id names don't necessarilly correspond with the content
