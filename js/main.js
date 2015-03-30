@@ -22,7 +22,6 @@
         var $btn = $('.btn');
         
 
-
       //Sets the height of the landing page to fit the screen, 70px is the height of the navbar
         $topPage.css("height", viewportHeight - 55);
       
@@ -354,4 +353,5 @@
            $('#status').text('Whoopsie! Your email failed to send due to: '+e.status+' '+e.statusText+'.');
          });
       }
+
     });
