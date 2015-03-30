@@ -1,6 +1,15 @@
 //my js
 
+//headroom
+// grab an element
+var myElement = document.querySelector("#header");
+// construct an instance of Headroom, passing the element
+var headroom  = new Headroom(myElement);
+// initialise
+headroom.init(); 
 
+
+//jQuery
     $(function(){
       //DOM cache
         var $slogan = $('#slogan');
@@ -23,7 +32,7 @@
         
 
       //Sets the height of the landing page to fit the screen, 70px is the height of the navbar
-        $topPage.css("height", viewportHeight - 55);
+        $topPage.css("height", viewportHeight);
       
 
       //changes top-bar bg color
@@ -31,9 +40,6 @@
         element: $topbar,
         handler: function() {
           console.log('top-bar activate');
-          $topbar.css("background", "white");
-          $topbar.addClass("shadow");
-          $btn.css("display", "block");
         },
         
       })
@@ -48,11 +54,8 @@
           //changes top bar background to none
           if (direction == "up") {
             console.log('top-bar deactivate');
-            $topbar.css("background", "none");
-            $topbar.removeClass("shadow");
             var $toDeactivate = $right.find('.active');
             $toDeactivate.removeClass('active');
-            $btn.css("display", "none");
           }
           else {
           console.log('About Section');
@@ -61,7 +64,7 @@
           $aboutBtn.addClass('active');
           }
         },
-        offset: 55
+        
       })
       var aboutWaypointBottom = new Waypoint({
         element: $bottomRed,
@@ -71,7 +74,7 @@
           $toDeactivate.removeClass('active');
           $aboutBtn.addClass('active');
         },
-        offset: 55
+        
       })
 
       //Second Section
@@ -83,7 +86,7 @@
           $toDeactivate.removeClass('active');
           $eventsBtn.addClass('active');
         },
-        offset: 55
+        
       })
       var eventsWaypoint = new Waypoint({
         element: document.getElementById('eventsBottom'),
@@ -93,7 +96,7 @@
           $toDeactivate.removeClass('active');
           $eventsBtn.addClass('active');
         },
-        offset: 55
+        
       })
 
       //Third Section
@@ -105,7 +108,7 @@
           $toDeactivate.removeClass('active');
           $getinvolvedBtn.addClass('active');
         },
-        offset: 55
+        
       })
       var getinvolvedWaypoint = new Waypoint({
         element: document.getElementById('getinvolvedBottom'),
@@ -115,7 +118,7 @@
           $toDeactivate.removeClass('active');
           $getinvolvedBtn.addClass('active');
         },
-        offset: 55
+        
       })
 
       //Fourth Section
@@ -127,7 +130,7 @@
           $toDeactivate.removeClass('active');
           $teamBtn.addClass('active');
         },
-        offset: 55
+        
       })
       var teamWaypoint = new Waypoint({
         element: document.getElementById('teamBottom'),
@@ -137,7 +140,7 @@
           $toDeactivate.removeClass('active');
           $teamBtn.addClass('active');
         },
-        offset: 55
+        
       })
 
       //Fifth Section
@@ -149,7 +152,7 @@
           $toDeactivate.removeClass('active');
           $contactBtn.addClass('active');
         },
-        offset: 55
+        
       })
 
       
@@ -164,37 +167,37 @@
           $menuToggle.trigger('click');
           //scrolls to section
              $htmlbody.animate({
-                  scrollTop: $("#red").offset().top - 54
+                  scrollTop: $("#red").offset().top 
               }, 500);
         });
         $eventsBtn.click(function(){
           $menuToggle.trigger('click');
             $htmlbody.animate({
-                  scrollTop: $("#events").offset().top - 54
+                  scrollTop: $("#events").offset().top 
               }, 500);
         });
         $getinvolvedBtn.click(function(){
           $menuToggle.trigger('click');
             $htmlbody.animate({
-                  scrollTop: $("#blue").offset().top - 54
+                  scrollTop: $("#blue").offset().top 
               }, 500);
         });
         $teamBtn.click(function(){
           $menuToggle.trigger('click');
             $htmlbody.animate({
-                  scrollTop: $("#team").offset().top - 54
+                  scrollTop: $("#team").offset().top 
               }, 500);
         });
         $contactBtn.click(function(){
           $menuToggle.trigger('click');
             $htmlbody.animate({
-                  scrollTop: $("#green").offset().top - 54
+                  scrollTop: $("#green").offset().top 
               }, 500);
         });
         
         $reslogotext.click(function(){
             $htmlbody.animate({
-                  scrollTop: $topPage.offset().top - 55
+                  scrollTop: $topPage.offset().top
               }, 500);
              
         });

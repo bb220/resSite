@@ -30,7 +30,6 @@ a {
 #reslogotext{
 	height: 53px;
 	cursor: pointer;
-	margin-left: -5px;
 }
 
 #topPage {
@@ -49,24 +48,50 @@ a {
  	width: auto;
  	font-weight: 400;
  	padding: 0 20px;
- 	display: none;
  }
 
  
+//Headroom effect
+.headroom {
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+#header {
+	width: 100%;
+  	left: 0;
+  	position: fixed;
+  	top: 0;
+  	z-index: 99;
+}
+
 
 
 
  nav {
- 	opacity: 0.95;
+ 	opacity: 0.9;
  }
 
+ nav li {
+ 	color: $dark;
+ }
+
+.top-bar {
+	background: white;
+	box-shadow: 0 8px 10px -10px black;
+
+}
 #learnMore {
 	color: grey;
 	font-size: 0.8rem;
 }
 
 #splash {
-	background: url('/img/spark.jpg') center;
+	background: url('/img/spark.jpg') center top;
 	background-size: cover;
 }
  //Navbar tab colors and active states
@@ -144,10 +169,6 @@ a {
 	vertical-align: top;
 	margin-left: 3px;
 	margin-top: 2px;
-}
-
-.shadow {
-	box-shadow: 0 8px 10px -10px black;
 }
 
 
@@ -476,7 +497,7 @@ ul #eventContainer h4 {
 @media only screen and (max-width: 40em) {
 	#reslogotext{
 	height: 42px;
-	margin-left: -28px;
+	margin-left: -3px;
 	}	
 	.secTitle {
 		font-size: 1.8rem;
@@ -2084,7 +2105,7 @@ $has-tip-cursor-type: pointer;
 
 // Background color for the top bar
  $topbar-bg-color: $white;
- $topbar-bg: none;
+ $topbar-bg: $topbar-bg-color;
 
 
 // Height and margin
