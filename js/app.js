@@ -31,8 +31,7 @@ $(document).foundation();
         var $bottomRed = $('#bottomRed');
         var $menuToggle = $('#menuToggle');
         var $topbar = $('.top-bar');
-        var $btn = $('.btn');
-        var $icon = $('#menuToggle');
+        var $header = $('#header');
         
       //headroom
       // grab an element
@@ -56,22 +55,18 @@ $(document).foundation();
           //changes top bar background to none
           if (direction == "up") {
             console.log('top-bar deactivate');
-            $topbar.css("background", "none");
-            $topbar.removeClass("shadow");
+            $header.css("position", "relative");
             var $toDeactivate = $right.find('.active');
             $toDeactivate.removeClass('active');
-            $btn.css("display", "none");
-            $icon.css("display", "none");
+
           }
           else {
           console.log('About Section');
-          $topbar.css("background", "white");
-          $topbar.addClass("shadow");
-          $btn.css("display", "block");
+          $header.css("position", "fixed");
           var $toDeactivate = $right.find('.active');
           $toDeactivate.removeClass('active');
           $aboutBtn.addClass('active');
-          $icon.css("display","block");
+
           }
         },
         

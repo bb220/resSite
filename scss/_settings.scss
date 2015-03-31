@@ -48,7 +48,6 @@ a {
  	width: auto;
  	font-weight: 400;
  	padding: 0 20px;
- 	display: none;
  }
 
 .center-li {
@@ -74,7 +73,6 @@ a {
 #header {
 	width: 100%;
   	left: 0;
-  	position: fixed;
   	top: 0;
   	z-index: 99;
 }
@@ -84,21 +82,16 @@ a {
 
  nav {
  	opacity: 0.95;
+ 	box-shadow: 0 8px 10px -10px black;
  }
 
  nav li {
  	color: $dark;
  }
 
- #menuToggle {
- 	display: none;
- }
 
 .top-bar {
 	background: none;
-}
-.shadow {
-	box-shadow: 0 8px 10px -10px black;
 }
 #learnMore {
 	color: grey;
@@ -2132,7 +2125,7 @@ $has-tip-cursor-type: pointer;
 
 // Background color for the top bar
  $topbar-bg-color: $white;
- $topbar-bg: none;
+ $topbar-bg: $topbar-bg-color;
 
 
 // Height and margin
