@@ -32,6 +32,7 @@ $(document).foundation();
         var $menuToggle = $('#menuToggle');
         var $topbar = $('.top-bar');
         var $header = $('#header');
+        var $space = $('.space');
         
       //headroom
       // grab an element
@@ -55,6 +56,7 @@ $(document).foundation();
           if (direction == "up") {
             console.log('top-bar deactivate');
             $header.css("position", "relative");
+            $space.css("display", "none");
             headroom.destroy();
             var $toDeactivate = $right.find('.active');
             $toDeactivate.removeClass('active');
@@ -63,6 +65,7 @@ $(document).foundation();
           else {
             console.log('About Section');
             $header.css("position", "fixed");
+            $space.css("display", "block");
             headroom.init();
             var $toDeactivate = $right.find('.active');
             $toDeactivate.removeClass('active');
