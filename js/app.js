@@ -38,8 +38,7 @@ $(document).foundation();
       var myElement = document.querySelector("#header");
       // construct an instance of Headroom, passing the element
       var headroom  = new Headroom(myElement);
-      // initialise
-      headroom.init(); 
+ 
 
       //Sets the height of the landing page to fit the screen, 70px is the height of the navbar
         $topPage.css("height", viewportHeight);
@@ -56,16 +55,18 @@ $(document).foundation();
           if (direction == "up") {
             console.log('top-bar deactivate');
             $header.css("position", "relative");
+            headroom.destroy();
             var $toDeactivate = $right.find('.active');
             $toDeactivate.removeClass('active');
 
           }
           else {
-          console.log('About Section');
-          $header.css("position", "fixed");
-          var $toDeactivate = $right.find('.active');
-          $toDeactivate.removeClass('active');
-          $aboutBtn.addClass('active');
+            console.log('About Section');
+            $header.css("position", "fixed");
+            headroom.init();
+            var $toDeactivate = $right.find('.active');
+            $toDeactivate.removeClass('active');
+            $aboutBtn.addClass('active');
 
           }
         },
