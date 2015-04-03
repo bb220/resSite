@@ -60,14 +60,14 @@ a {
     transition: transform 200ms linear;
 }
 .headroom--pinned {
-	-webkit-transform: translateY(0%);
-    -ms-transform: translateY(0%);
-    transform: translateY(0%);
+	-webkit-transform: translate3d(0,0%,0);
+    -ms-transform: translate3d(0,0%,0);
+    transform: translate3d(0,0%,0);
 }
 .headroom--unpinned {
-	-webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    transform: translateY(-100%);
+	-webkit-transform: translate3d(0,-100%,0);
+    -ms-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
 }
 
 #header {
