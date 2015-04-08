@@ -30,6 +30,7 @@ $(document).foundation();
         var $topbar = $('.top-bar');
         var $header = $('#header');
         var $activate = $('#activate');
+        var $space = $('.space');
         
       //headroom
       // grab an element
@@ -51,11 +52,13 @@ $(document).foundation();
           if (direction == "down") {
           console.log("top-bar activate");
           $header.css("position", "fixed");
+          $space.css("display", "block");
           headroom.init();
           }
           else {
-                      console.log('top-bar deactivate');
+            console.log('top-bar deactivate');
             $header.css("position", "relative");
+            $space.css("display", "none");
             headroom.destroy();
           }
         }
