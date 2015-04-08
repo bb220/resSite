@@ -29,7 +29,7 @@ $(document).foundation();
         var $menuToggle = $('#menuToggle');
         var $topbar = $('.top-bar');
         var $header = $('#header');
-        var $space = $('.space');
+        var $activate = $('#activate');
         
       //headroom
       // grab an element
@@ -39,23 +39,33 @@ $(document).foundation();
  
 
       //Sets the height of the landing page to fit the screen, 70px is the height of the navbar
-        $topPage.css("height", viewportHeight);
+        $topPage.css("height", viewportHeight - 55);
       
 
       //Adjusting "active" class to update with user scroll via waypoints plugin
       //There are two waypoints for each section: one at the top and one at the bottom of the section (except for the last section which only has a top waypoint)
       //note: id names don't necessarilly correspond with the content
-
+      var activateWaypoint = new Waypoint({
+        element: $activate,
+        handler: function(direction) {
+          if (direction == "down") {
+          console.log("top-bar activate");
+          $header.css("position", "fixed");
+          headroom.init();
+          }
+          else {
+                      console.log('top-bar deactivate');
+            $header.css("position", "relative");
+            headroom.destroy();
+          }
+        }
+      })
       //First section
       var aboutWaypoint = new Waypoint({
         element: $red,
         handler: function(direction) {
           //Releases navbar and deactivates the headroom effect
           if (direction == "up") {
-            console.log('top-bar deactivate');
-            $header.css("position", "relative");
-            $space.css("display", "none");
-            headroom.destroy();
             var $toDeactivate = $right.find('.active');
             $toDeactivate.removeClass('active');
 
@@ -63,9 +73,6 @@ $(document).foundation();
           //Fixes navbar to top and initializes the headroom effect
           else {
             console.log('About Section');
-            $header.css("position", "fixed");
-            $space.css("display", "block");
-            headroom.init();
             var $toDeactivate = $right.find('.active');
             $toDeactivate.removeClass('active');
             $aboutBtn.addClass('active');
