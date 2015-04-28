@@ -1,6 +1,6 @@
 # rutrep.com
 
-This is long-awaited, new website for the Rutgers Entrepreneurial Society!
+This is the long-awaited, new website for the Rutgers Entrepreneurial Society!
 
 ## Requirements
 
@@ -25,5 +25,5 @@ And you're set!
 
 ## Directory Structure
 
-  * `scss/_settings.scss`: Foundation configuration settings go in here
+  * `scss/_settings.scss`: Foundation configuration settings go in here, custom settings have also been placed in here
   * `scss/app.scss`: Application styles go here
