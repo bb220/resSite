@@ -1,6 +1,6 @@
-# Foundation libsass template
+# rutrep.com
 
-This is a template to start your own project that uses Grunt and libsass!
+This is long-awaited, new website for the Rutgers Entrepreneurial Society!
 
 ## Requirements
 
