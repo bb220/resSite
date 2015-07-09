@@ -1,6 +1,6 @@
 # rutrep.com
 
-This is the long-awaited, new website for the Rutgers Entrepreneurial Society!
+This is the long-awaited new website for the Rutgers Entrepreneurial Society!
 
 ## Requirements
 
