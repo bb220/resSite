@@ -13,24 +13,24 @@ $(document).foundation();
 //custom js
     $(function(){
       //DOM cache
-        var $slogan = $('#slogan');
-        var viewportHeight = $(window).height();
-        var $aboutBtn = $('#aboutBtn');
-        var $eventsBtn = $('#eventsBtn');
-        var $getinvolvedBtn = $('#getinvolvedBtn');
-        var $teamBtn = $('#teamBtn');
-        var $contactBtn = $('#contactBtn');
-        var $reslogotext = $('#reslogotext');
-        var $htmlbody = $('html, body');
-        var $topPage = $('#topPage');
-        var $right = $('.right');
-        var $red = $('#red');
-        var $bottomRed = $('#bottomRed');
-        var $menuToggle = $('#menuToggle');
-        var $topbar = $('.top-bar');
-        var $header = $('#header');
-        var $activate = $('#activate');
-        var $space = $('.space');
+      var $slogan = $('#slogan');
+      var viewportHeight = $(window).height();
+      var $aboutBtn = $('#aboutBtn');
+      var $eventsBtn = $('#eventsBtn');
+      var $getinvolvedBtn = $('#getinvolvedBtn');
+      var $teamBtn = $('#teamBtn');
+      var $contactBtn = $('#contactBtn');
+      var $reslogotext = $('#reslogotext');
+      var $htmlbody = $('html, body');
+      var $topPage = $('#topPage');
+      var $right = $('.right');
+      var $red = $('#red');
+      var $bottomRed = $('#bottomRed');
+      var $menuToggle = $('#menuToggle');
+      var $topbar = $('.top-bar');
+      var $header = $('#header');
+      var $activate = $('#activate');
+      var $space = $('.space');
         
       //headroom
       // grab an element
