@@ -13,7 +13,7 @@ $(document).foundation();
 //custom js
     $(function(){
       //DOM cache
-      var $slogan = $('#slogan');
+       var $slogan = $('#slogan');
       var viewportHeight = $(window).height();
       var $aboutBtn = $('#aboutBtn');
       var $eventsBtn = $('#eventsBtn');
