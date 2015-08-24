@@ -15,6 +15,7 @@ $(document).foundation();
       //DOM cache
       var $slogan = $('#slogan');
       var viewportHeight = $(window).height();
+      var $blogBtn = $('#blogBtn');
       var $aboutBtn = $('#aboutBtn');
       var $eventsBtn = $('#eventsBtn');
       var $getinvolvedBtn = $('#getinvolvedBtn');
@@ -178,7 +179,9 @@ $(document).foundation();
      
 
     
-        
+      $blogBtn.click(function() {
+        window.location.href="/blog.html";
+      });
       //On click, navbar links scroll to corresponding section
         $aboutBtn.click(function(){
           //on small screen, closes menu
