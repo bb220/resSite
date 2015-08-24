@@ -25,723 +25,731 @@ a {
 }
 
 #green textarea {
-	height: 200px;
+    height: 200px;
 }
 #reslogotext{
-	height: 53px;
-	cursor: pointer;
+    height: 53px;
+    cursor: pointer;
 }
 
 #topPage {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .icons {
-	height: 5em;
+    height: 5em;
 }
 
 .btn {
- 	height: 55px;
- 	text-align: center;
- 	line-height: 52px;
- 	cursor: pointer;
- 	width: auto;
- 	font-weight: 400;
- 	padding: 0 20px;
+    height: 55px;
+    text-align: center;
+    line-height: 52px;
+    cursor: pointer;
+    width: auto;
+    font-weight: 400;
+    padding: 0 20px;
  }
 
 .center-li {
-	margin-left: 171%;
+    margin-left: 171%;
 }
  
 //Headroom effect
 .headroom {
-	-webkit-transition: -webkit-transform 200ms linear;
+    -webkit-transition: -webkit-transform 200ms linear;
     transition: transform 200ms linear;
 }
 .headroom--pinned {
-	-webkit-transform: translate3d(0,0%,0);
+    -webkit-transform: translate3d(0,0%,0);
     -ms-transform: translate3d(0,0%,0);
     transform: translate3d(0,0%,0);
 }
 .headroom--unpinned {
-	-webkit-transform: translate3d(0,-100%,0);
+    -webkit-transform: translate3d(0,-100%,0);
     -ms-transform: translate3d(0,-100%,0);
     transform: translate3d(0,-100%,0);
 }
 
 #header {
-	width: 100%;
-  	left: 0;
-  	top: 0;
-  	z-index: 99;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
 }
 
 
 
 
  nav {
- 	box-shadow: 0 8px 10px -10px black;
+    box-shadow: 0 8px 10px -10px black;
  }
 
  nav li {
- 	color: $dark;
+    color: $dark;
  }
 
 
 .top-bar {
-	background: none;
+    background: none;
 }
 #learnMore {
-	color: grey;
-	font-size: 0.8rem;
+    color: grey;
+    font-size: 0.8rem;
 }
 
 #splash {
-	background: url('/img/spark.jpg') center;
-	background-size: cover;
+    background: url('/img/spark.jpg') center;
+    background-size: cover;
 }
  //Navbar tab colors and active states
  
  #aboutBtn.active {
- 	background-color: $scarlet;
- 	color: $white;
+    background-color: $scarlet;
+    color: $white;
  }
  #aboutBtn:hover {
- 	background-color: $scarlet;
- 	color: $white;
+    background-color: $scarlet;
+    color: $white;
+ }
+ #blogBtn:hover {
+    background-color: $dark;
+    color: $white;
+ }
+  #blogBtn:active {
+    background-color: $dark;
+    color: $white;
  }
  #eventsBtn.active {
- 	background-color: $dark;
- 	color: $white;
+    background-color: $dark;
+    color: $white;
  }
  #eventsBtn:hover {
- 	background-color: $dark;
- 	color: $white;
+    background-color: $dark;
+    color: $white;
  }
  #getinvolvedBtn.active {
- 	background-color: $indigo;
- 	color: $white;
+    background-color: $indigo;
+    color: $white;
  }
  #getinvolvedBtn:hover  {
-	background-color: $indigo;
-	color: $white;
+    background-color: $indigo;
+    color: $white;
  }
  #teamBtn.active {
- 	background-color: $dark;
- 	color: $white;
+    background-color: $dark;
+    color: $white;
  }
  #teamBtn:hover {
- 	background-color: $dark;
- 	color: $white;
+    background-color: $dark;
+    color: $white;
  }
  #contactBtn.active {
- 	background-color:  $money;
- 	color: $white;	
+    background-color:  $money;
+    color: $white;  
  }
  #contactBtn:hover {
- 	background-color: $money;
- 	color: $white;
+    background-color: $money;
+    color: $white;
  }
 
 .title-area {
-	padding-top: 0px;
-	padding-left: 2px;
+    padding-top: 0px;
+    padding-left: 2px;
 }
 
 
 .bCK {
-	background-color: #f4f4f4;
+    background-color: #f4f4f4;
 }
 
 
 
 
 .fright {
-	float: right;
+    float: right;
 }
 
 
  
 
 #slogan {
-	color: white;
-	font-size: 68px;
-	font-weight: bold;
-	margin-top: 10vh;
+    color: white;
+    font-size: 68px;
+    font-weight: bold;
+    margin-top: 10vh;
 }
 
 #bigLogo {
-	height: 50px;
-	vertical-align: top;
-	margin-left: 3px;
-	margin-top: 2px;
+    height: 50px;
+    vertical-align: top;
+    margin-left: 3px;
+    margin-top: 2px;
 }
 
 
 
 .iconTitle {
-	margin-top: 5%;
+    margin-top: 5%;
 }
 
 
 #red {
-	width: 100%;
-	background-color: $scarlet;
-	color: white;
+    width: 100%;
+    background-color: $scarlet;
+    color: white;
 }
 
 //adjust spacing at different sizes with media queries
 //general top and bottom space for each section
 .splashSpace {
-	height: 100px;
+    height: 100px;
 }
 .topSpace {
-	height:100px;
+    height:100px;
 }
 .topSpace2 {
-	height:75px;
+    height:75px;
 }
 
 .bottomSpace {
-	height: 120px;
+    height: 120px;
 }
 .bottomSpace2 {
-	height: 75px;
+    height: 75px;
 }
 
 .abovePartner {
-	height: 100px;
+    height: 100px;
 }
 //specific spacings for elements in between
 
 
 #logoBottomSpace {
-	height: 70px;
+    height: 70px;
 }
 .overIconSpace {
-	height: 42px;
+    height: 42px;
 }
 #underIconSpace {
-	height: 50px;
+    height: 50px;
 }
 
 .smallSpace {
-	height: 20px;
+    height: 20px;
 }
 
 .smallSpace2 {
-	height: 10px;
+    height: 10px;
 }
 
 
 #blue {
-	background-color: $indigo ;
-	color: white;
+    background-color: $indigo ;
+    color: white;
 }
 
 footer {
-	text-align: center;
-	font-size: 0.7em;
-	color: white;
+    text-align: center;
+    font-size: 0.7em;
+    color: white;
 }
 
 footer a {
-	color: white;
+    color: white;
 
 }
 
 .secTitle {
-	font-weight: 400;
-	font-size: 4rem;
+    font-weight: 400;
+    font-size: 4rem;
 }
 h2 {
-	font-weight: 300;
+    font-weight: 300;
 }
 
 p {
-	font-weight: 300;
+    font-weight: 300;
 }
 #green {
-	background-color: $money;
-	color: white;
+    background-color: $money;
+    color: white;
 }
 #green h4{
-	color: white;
+    color: white;
 }
 #blue h1 {
-	color: white;
-	font-weight: 400;
+    color: white;
+    font-weight: 400;
 }
 #blue h2 {
-	color: white;
+    color: white;
 }
 #blue h3 {
-	color: white;
+    color: white;
 }
 #blue h4 {
-	color: white;
+    color: white;
 }
 #blue a {
-	color: #F4F6F7;
+    color: #F4F6F7;
 }
 .indicates-required {
-	color: #F4F6F7;
-	font-size: 60%;
+    color: #F4F6F7;
+    font-size: 60%;
 }
 #red h2 {
-	color: whitesmoke;
-	font-weight: 300;
+    color: whitesmoke;
+    font-weight: 300;
 }
 
 #tagSection {
-	margin-top: 10px;
-	margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .tags {
-	color: white;
-	font-size: 4rem;
+    color: white;
+    font-size: 4rem;
 }
 
 
 
 #red strong {
-	font-weight: 400;
+    font-weight: 400;
 }
 
 #red span {
-	font-weight: 600;
-	color: white;
+    font-weight: 600;
+    color: white;
 }
 #red h3 {
-	color: whitesmoke;
+    color: whitesmoke;
 }
 #red h4 {
-	color: whitesmoke;
+    color: whitesmoke;
 }
 #red h6 {
-	color: whitesmoke;
+    color: whitesmoke;
 }
 #red h1 {
-	font-weight: 600;
+    font-weight: 600;
 }
 
 #green h1 {
-	font-weight: 400;
-	color: white;
+    font-weight: 400;
+    color: white;
 }
 #red h3 {
-	color: white;
+    color: white;
 }
 
 //Events Desc CSS
 
 .event {
-	cursor: pointer;
+    cursor: pointer;
 }
 ul #eventContainer h4 {
-	font-weight: 400;
+    font-weight: 400;
 }
 #descFive h5 {
-	font-weight: 400;
+    font-weight: 400;
 }
 #desciptions .active {
-	display: block;
+    display: block;
 }
 
 #descOne {
-	display: none;
-	cursor: pointer;
+    display: none;
+    cursor: pointer;
 
 }
 #descOne.active {
-	display: block;
+    display: block;
 }
 
 #descTwo {
-	display: none;
-	cursor: pointer;
+    display: none;
+    cursor: pointer;
 
 }
 #descTwo.active {
-	display: block;
+    display: block;
 }
 
 #descThree {
-	display: none;
-	cursor: pointer;
+    display: none;
+    cursor: pointer;
 
 }
 #descThree.active {
-	display: block;
+    display: block;
 }
 
 #descFour {
-	display: none;
-	cursor: pointer;
+    display: none;
+    cursor: pointer;
 
 }
 #descFour.active {
-	display: block;
+    display: block;
 }
 
  #descFive {
-	display: none;
-	cursor: pointer;
-	width: 100%;
-	margin-left: 50%;
+    display: none;
+    cursor: pointer;
+    width: 100%;
+    margin-left: 50%;
 
 }
 #descFive.active {
-	display: block;
+    display: block;
 }
 
 /*
 #descSix {
-	display: none;
-	cursor: pointer;
+    display: none;
+    cursor: pointer;
 }
 #descSix.active {
-	display: block;
+    display: block;
 }
 
 #descSeven {
-	display: none;
-	cursor: pointer;
+    display: none;
+    cursor: pointer;
 
 }
 #descSeven.active {
-	display: block;
+    display: block;
 }
 
 #descEight {
-	display: none;
-	cursor: pointer;
+    display: none;
+    cursor: pointer;
 
 }
 #descEight.active {
-	display: block;
+    display: block;
 } */
 
 #eventContainer {
-	padding: 2px;
+    padding: 2px;
 }
 
 #eventFive {
-	margin-left: 50%;
+    margin-left: 50%;
 }
 #teamRow h4 {
-	font-weight: 400;
+    font-weight: 400;
 }
 .toDisplay {
-	display: none;
+    display: none;
 }
 
 .toHide {
-	display: block;
+    display: block;
 }
 .toHide strong {
-		font-weight: 400;
-	}
+        font-weight: 400;
+    }
 .toHideMed {
-		display: block;
-	}
+        display: block;
+    }
 .toDisplayMed {
-	display: none;
+    display: none;
 }
 
 #submit {
-	background-color: #729006;
+    background-color: #729006;
 }
 #submit:hover {
-	background-color: #5D7604;
+    background-color: #5D7604;
 }
 
 #blue label {
-	color: white;
-	font-weight: 400;
+    color: white;
+    font-weight: 400;
 }
 
 #mc_embed_signup input {
-	border-radius: 8px;
+    border-radius: 8px;
 }
 
 #green input {
-	border-radius: 8px;
-	margin: 0;
+    border-radius: 8px;
+    margin: 0;
 }
 #green label {
-	color: white;
+    color: white;
 }
 #emailcont {
-	padding-right: 5px;
+    padding-right: 5px;
 }
 #companyschoolcont {
-	padding-left:5px;
+    padding-left:5px;
 }
 #namecont {
-	padding-right:5px;
+    padding-right:5px;
 }
 
 #green textarea {
-	border-radius: 8px;
+    border-radius: 8px;
 }
 
 
 
 #mc_embed_signup .first {
-	padding-right: 5px;
-	height: 68px;
+    padding-right: 5px;
+    height: 68px;
 }
 #mc_embed_signup .last {
-	padding-left: 5px;
-	height: 68px;
+    padding-left: 5px;
+    height: 68px;
 }
 
 .space {
-	height: 55px;
-	display: none;
+    height: 55px;
+    display: none;
 }
 
 
 @media only screen and (max-width: 40em) {
-	#reslogotext{
-	height: 42px;
-	margin-top: 1px;
-	margin-left: -3px;
-	}	
-	.secTitle {
-		font-size: 1.8rem;
-	}
-	#bigLogo {
-		vertical-align: super;
-		height: 36px;
-		margin-left: 0;
-		margin-top: 1px;
-	}
-	#descriptions div img {
-		width: 100%;
-	}
-	// Fixes event effect for mobile, avoids right column elements sticking outside of viewport
-	
-	#slogan {
-		margin-top: 28px;
-		font-size: 55px;
-		line-height: 60px;
-	}
-	#descFive {
-		margin-right: auto;
-		margin-left: auto;
-	}
-	
-	.toDisplay {
-		display: block;
-	}
-	.toDisplay strong {
-		font-weight: 400;
-	}
-	.toHide {
-		display: none;
-	}
-	.btn {
-		width: 100vw;
-	}
-	#getinvolvedBtn {
-	width: inherit;
- 	}
- 	#eventsBtn {
- 		width:inherit;
- 	}
- 	#contactBtn {
- 		width: inherit;
- 	}
- 	#red h2 {
- 		font-size: 0.88rem;
- 	}
- 	#red strong {
- 		font-size: 0.7rem;
- 	}
- 	.tags {
- 		font-size:1.8rem;
- 	}
- 	#tagSection {
- 		margin: 0;
- 	}
- 	.topSpace {
-	height:50px;
-	}
-	.topSpace2 {
-	height:50px;
-	}
+    #reslogotext{
+    height: 42px;
+    margin-top: 1px;
+    margin-left: -3px;
+    }   
+    .secTitle {
+        font-size: 1.8rem;
+    }
+    #bigLogo {
+        vertical-align: super;
+        height: 36px;
+        margin-left: 0;
+        margin-top: 1px;
+    }
+    #descriptions div img {
+        width: 100%;
+    }
+    // Fixes event effect for mobile, avoids right column elements sticking outside of viewport
+    
+    #slogan {
+        margin-top: 28px;
+        font-size: 55px;
+        line-height: 60px;
+    }
+    #descFive {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .toDisplay {
+        display: block;
+    }
+    .toDisplay strong {
+        font-weight: 400;
+    }
+    .toHide {
+        display: none;
+    }
+    .btn {
+        width: 100vw;
+    }
+    #getinvolvedBtn {
+    width: inherit;
+    }
+    #eventsBtn {
+        width:inherit;
+    }
+    #contactBtn {
+        width: inherit;
+    }
+    #red h2 {
+        font-size: 0.88rem;
+    }
+    #red strong {
+        font-size: 0.7rem;
+    }
+    .tags {
+        font-size:1.8rem;
+    }
+    #tagSection {
+        margin: 0;
+    }
+    .topSpace {
+    height:50px;
+    }
+    .topSpace2 {
+    height:50px;
+    }
 
-	.bottomSpace {
-	height: 70px;
-	}
-	.bottomSpace2 {
-		height: 70px;
-	}
+    .bottomSpace {
+    height: 70px;
+    }
+    .bottomSpace2 {
+        height: 70px;
+    }
 
-	.abovePartner {
-	height: 70px;
-	}
-	.overIconSpace {
-	height: 10px;
-	}
-	.icons {
-		height: 4em;
-	}
-	#teamRow p {
-		font-size: 0.8rem;
-	}
-	
-	
-	#descFive h5 {
-		text-align: center;
-	}
+    .abovePartner {
+    height: 70px;
+    }
+    .overIconSpace {
+    height: 10px;
+    }
+    .icons {
+        height: 4em;
+    }
+    #teamRow p {
+        font-size: 0.8rem;
+    }
+    
+    
+    #descFive h5 {
+        text-align: center;
+    }
 
-	#logo-container {
- 		padding: 5px;
- 		}
+    #logo-container {
+        padding: 5px;
+        }
 
-	#mc_embed_signup .first {
-		padding-right: .9375rem;
-		height: 68px;
-		}
-	#mc_embed_signup .last {
-		padding-left: .9375rem;
-		height: 68px;
-		}
-	#emailcont {
-		padding-right: 0.9375rem;
-		}
-	#companyschoolcont {
-		padding-left: 0.9375rem;
-		}
-	#namecont {
-		padding-right: 0.9375rem;
-	}
-	#descOne {
-		width: 104%;
-	}
-	#descOne .push-fix {
-		padding-right: 0;
-	}
-	#descTwo {
-		width: 104%;
-	}
-	#descTwo .push-fix {
-		padding-right: 0;
-	}
-	#descThree {
-		width: 104%;
-	}
-	#descThree .push-fix {
-		padding-right: 0;
-	}
-	#descFour {
-		width: 104%;
-	}
-	#descFour .push-fix {
-		padding-right: 0;
-	}
-	#descFive {
-		width: 100%;
-	}
-	.push-fix {
-		padding-right: 0;
-	}
-	
-	#eventFive {
-	margin-left: 0;
-	}
-	
-	#map-fix {
-		width: 100%;
-		margin: 0;
+    #mc_embed_signup .first {
+        padding-right: .9375rem;
+        height: 68px;
+        }
+    #mc_embed_signup .last {
+        padding-left: .9375rem;
+        height: 68px;
+        }
+    #emailcont {
+        padding-right: 0.9375rem;
+        }
+    #companyschoolcont {
+        padding-left: 0.9375rem;
+        }
+    #namecont {
+        padding-right: 0.9375rem;
+    }
+    #descOne {
+        width: 104%;
+    }
+    #descOne .push-fix {
+        padding-right: 0;
+    }
+    #descTwo {
+        width: 104%;
+    }
+    #descTwo .push-fix {
+        padding-right: 0;
+    }
+    #descThree {
+        width: 104%;
+    }
+    #descThree .push-fix {
+        padding-right: 0;
+    }
+    #descFour {
+        width: 104%;
+    }
+    #descFour .push-fix {
+        padding-right: 0;
+    }
+    #descFive {
+        width: 100%;
+    }
+    .push-fix {
+        padding-right: 0;
+    }
+    
+    #eventFive {
+    margin-left: 0;
+    }
+    
+    #map-fix {
+        width: 100%;
+        margin: 0;
 
-	}
+    }
 
-	#map-fix .small-12 {
-		padding: 0;
-	}
+    #map-fix .small-12 {
+        padding: 0;
+    }
 
-	.center-li {
-	margin-left: 0;
-	}
+    .center-li {
+    margin-left: 0;
+    }
 
-	#shrey {
-		margin-left: 15%;
-	}
+    #shrey {
+        margin-left: 15%;
+    }
 
-	#jackie {
-		margin-left: 2%;
-	}
+    #jackie {
+        margin-left: 2%;
+    }
 
 
-	
-	
- } 			 
+    
+    
+ }           
 
  @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
- 	.btn {
- 		padding: 0 15px;
- 	}
- 	.splashSpace {
- 		height: 150px;
- 	}
- 	
+    .btn {
+        padding: 0 15px;
+    }
+    .splashSpace {
+        height: 150px;
+    }
+    
 
- 	#red h2 {
- 		font-size: 2.2rem;
- 	}
+    #red h2 {
+        font-size: 2.2rem;
+    }
 
-	#descFour {
-		margin-right: auto;
-	}
-	#descFour p {
-		width: 111%
-	}
+    #descFour {
+        margin-right: auto;
+    }
+    #descFour p {
+        width: 111%
+    }
 
-	#descEight {
-		margin-right: auto;
-	}
- 	#descEight p {
-		width: 111%
-	}
-	.toHideMed {
-		display: none;
-	}
-	.toDisplayMed {
-	display: block;
+    #descEight {
+        margin-right: auto;
+    }
+    #descEight p {
+        width: 111%
+    }
+    .toHideMed {
+        display: none;
+    }
+    .toDisplayMed {
+    display: block;
 }
 
-		#emailcont {
-			padding-right: 0.9375rem;
-		}
-		#companyschoolcont {
-			padding-left: 0.9375rem;
-		}
-		#namecont {
-			padding-right: 0.9375rem;
-		}
+        #emailcont {
+            padding-right: 0.9375rem;
+        }
+        #companyschoolcont {
+            padding-left: 0.9375rem;
+        }
+        #namecont {
+            padding-right: 0.9375rem;
+        }
 
-		#descTwo {
-		width: 104%;
-		}
-		#descTwo .push-fix {
-			padding-right: 0;
-		}
-		#descFour {
-			width: 104%;
-		}
-		#descFour .push-fix {
-			padding-right: 0;
-		}
-		
+        #descTwo {
+        width: 104%;
+        }
+        #descTwo .push-fix {
+            padding-right: 0;
+        }
+        #descFour {
+            width: 104%;
+        }
+        #descFour .push-fix {
+            padding-right: 0;
+        }
+        
 
 
- 	
+    
  }
 
 //END CUSTOM CSS
