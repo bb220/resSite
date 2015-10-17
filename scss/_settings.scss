@@ -23,6 +23,18 @@ a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent; 
 }
+.eventLinks a {
+    color: white;
+}
+.eventLinks a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.eventLinks a:visited {
+    color: white;
+}
+
 
 #green textarea {
     height: 200px;
@@ -311,8 +323,6 @@ p {
     color: white;
     font-size: 4rem;
 }
-
-
 
 #red strong {
     font-weight: 400;
